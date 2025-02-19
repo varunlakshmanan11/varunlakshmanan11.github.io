@@ -74,57 +74,57 @@
     }
     
   /* Mobile Navbar */
-@media (max-width: 768px) {
-    .navbar {
-        justify-content: space-between;
-        padding: 10px 20px;
-    }
+    @media (max-width: 768px) {
+        .navbar {
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
 
-    /* Show Hamburger Icon */
-    .menu-icon {
-        display: block;
-        font-size: 2rem;
-        cursor: pointer;
-        color: #00ffff;
-        text-shadow: 0px 0px 8px #00ffff;
-    }
+        /* Show Hamburger Icon */
+        .menu-icon {
+            display: block;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #00ffff;
+            text-shadow: 0px 0px 8px #00ffff;
+        }
 
-    /* Hide menu initially */
-    .navbar ul {
-        flex-direction: column;
-        width: 100%;
-        display: none; /* Ensures the menu is hidden by default */
-        text-align: center;
-        background: rgba(34, 30, 30, 0.95);
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    }
+        /* Hide menu initially */
+        .navbar ul {
+            flex-direction: column;
+            width: 100%;
+            display: none; /* Ensures the menu is hidden by default */
+            text-align: center;
+            background: rgba(34, 30, 30, 0.95);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
 
-    .navbar ul li {
-        width: 100%;
-    }
+        .navbar ul li {
+            width: 100%;
+        }
 
-    .navbar ul li a {
-        display: block;
-        padding: 10px;
-        width: 100%;
-    }
+        .navbar ul li a {
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
 
-    /* Show menu when active */
-    .navbar ul.active {
-        display: flex;
-    }
+        /* Show menu when active */
+        .navbar ul.active {
+            display: flex;
+        }
 }
 
-/* Hide Hamburger on Large Screens */
-@media (min-width: 769px) {
-    .menu-icon {
-        display: none;
-    }
+    /* Hide Hamburger on Large Screens */
+    @media (min-width: 769px) {
+        .menu-icon {
+            display: none;
+        }
 }
   /* === Hover Zoom Effect (Point to Zoom) === */
   .horizontal-container {
