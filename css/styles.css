@@ -67,7 +67,63 @@
     color: #ff0000;
     text-shadow: 0px 0px 5px #f1f0eb;
   }
+
+  /* Hide Hamburger Menu by Default */
+    .menu-icon {
+        display: none;
+    }
     
+    /* Show Hamburger Menu Only on Mobile */
+    @media (max-width: 768px) {
+        .navbar {
+            justify-content: space-between;
+            padding: 10px 20px;
+        }
+
+        .menu-icon {
+            display: block; /* Show on small screens */
+            font-size: 2rem;
+            cursor: pointer;
+            color: #00ffff;
+            text-shadow: 0px 0px 8px #00ffff;
+        }
+
+        .navbar ul {
+            flex-direction: column;
+            width: 100%;
+            display: none; /* Hide menu initially */
+            text-align: center;
+            background: rgba(34, 30, 30, 0.95);
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 100%;
+            padding: 10px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar ul li {
+            width: 100%;
+        }
+
+        .navbar ul li a {
+            display: block;
+            padding: 10px;
+            width: 100%;
+        }
+
+        /* Show menu when active */
+        .navbar.active ul {
+            display: flex;
+        }
+    }
+
+    /* Hide menu icon on larger screens */
+    @media (min-width: 769px) {
+        .menu-icon {
+            display: none;
+        }
+}
   /* === Hover Zoom Effect (Point to Zoom) === */
   .horizontal-container {
     display: flex;
@@ -158,16 +214,36 @@
     transform: scale(1.05);
 }
 
+/* Adjust layout for mobile */
 @media (max-width: 768px) {
     .horizontal-container {
-      flex-direction: column;
-      text-align: center;
+        flex-direction: column;
+        height: auto;
+        padding-top: 80px; /* Avoid navbar overlap */
+    }
+
+    .photo-section,
+    .name-section,
+    .bio-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .photo-section img {
+        max-width: 70%; /* Prevent too large images */
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .name-section h1 {
+        font-size: 2rem; /* Reduce font size for small screens */
+    }
+
+    .bio-section {
+        padding: 20px; /* Reduce padding for small screens */
     }
     
-    .photo-section, .name-section, .bio-section {
-      width: 100%;
-    }
-  }
+}
   
 /* === My Education Section (Bigger & More Space for Logos) === */
 .education-container {

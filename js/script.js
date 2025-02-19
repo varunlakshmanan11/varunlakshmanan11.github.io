@@ -55,3 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
   window.addEventListener('scroll', checkScroll);
 });
+
+function toggleMenu() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('active');
+}
