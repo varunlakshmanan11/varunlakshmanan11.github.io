@@ -1,32 +1,46 @@
+document.addEventListener("DOMContentLoaded", function () {
+  // ======= HAMBURGER MENU FUNCTIONALITY =======
+  const menuIcon = document.querySelector(".menu-icon");
+  const navbarMenu = document.querySelector(".navbar ul");
+  const menuLinks = navbarMenu.querySelectorAll("a");
 
-// Hover Zoom Effect (Point to Zoom)
-const zoomableSections = document.querySelectorAll('.zoomable');
+  if (menuIcon && navbarMenu) {
+    menuIcon.addEventListener("click", function () {
+      navbarMenu.classList.toggle("active");
+    });
 
-let zoomTimeout; // Prevents rapid hover changes
+    // Close menu when clicking outside
+    document.addEventListener("click", function (event) {
+      if (!menuIcon.contains(event.target) && !navbarMenu.contains(event.target)) {
+        navbarMenu.classList.remove("active");
+      }
+    });
 
-zoomableSections.forEach((section) => {
-  section.addEventListener('mouseenter', () => {
-    clearTimeout(zoomTimeout); // Prevent multiple triggers
-    zoomTimeout = setTimeout(() => {
+    // Close menu when clicking a link
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", function () {
+        navbarMenu.classList.remove("active");
+      });
+    });
+  }
+
+  // ======= HOVER ZOOM EFFECT (Point to Zoom) =======
+  const zoomableSections = document.querySelectorAll('.zoomable');
+
+  zoomableSections.forEach((section) => {
+    section.addEventListener('mouseenter', () => {
       zoomableSections.forEach((other) => {
         other.classList.remove('zoom-in');
-        other.classList.add('zoom-out');
       });
-      section.classList.remove('zoom-out');
       section.classList.add('zoom-in');
-    }, 100); // Slight delay to avoid flickering
-  });
+    });
 
-  section.addEventListener('mouseleave', () => {
-    clearTimeout(zoomTimeout);
-    zoomableSections.forEach((other) => {
-      other.classList.remove('zoom-in', 'zoom-out');
+    section.addEventListener('mouseleave', () => {
+      section.classList.remove('zoom-in');
     });
   });
-});
 
-
-document.addEventListener('DOMContentLoaded', function () {
+  // ======= PROGRESS BAR ANIMATION ON SCROLL =======
   const progressBars = document.querySelectorAll('.progress-bar');
 
   function animateProgressBars() {
@@ -34,6 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
       const width = bar.getAttribute('data-width'); // Read width from HTML attribute
       bar.style.transition = "width 1.5s ease-in-out"; // Smooth transition
       bar.style.width = width;
+    });
+  }
+
+  function resetProgressBars() {
+    progressBars.forEach((bar) => {
+      bar.style.transition = "none"; // Instantly reset width
+      bar.style.width = "0%";
     });
   }
 
@@ -46,26 +67,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (sectionPosition < screenPosition) {
       animateProgressBars();
-      window.removeEventListener('scroll', checkScroll); // Run once
+    } else {
+      resetProgressBars();
     }
   }
 
-  // Run once if section is already visible on load
-  checkScroll();
-
   window.addEventListener('scroll', checkScroll);
-});
-
-function toggleMenu() {
-  const navbar = document.querySelector('.navbar');
-  navbar.classList.toggle('active');
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  const menuIcon = document.querySelector(".menu-icon");
-  const navbar = document.querySelector(".navbar ul");
-
-  menuIcon.addEventListener("click", function () {
-      navbar.classList.toggle("active");
-  });
+  checkScroll(); // Run once on load
 });
