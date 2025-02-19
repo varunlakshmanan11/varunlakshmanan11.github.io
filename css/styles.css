@@ -1,0 +1,633 @@
+/* === Global Cyberpunk Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif; /* Cyberpunk Font */
+    background-color: #0a0a0a; /* Dark Cyberpunk Background */
+    color: #ffffff;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* === Cyberpunk-Inspired "VL" Navbar === */
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(34, 30, 30, 0.95);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .nav-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00ffff; /* Cyberpunk Cyan */
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    text-shadow: 0px 0px 8px #00ffff, 0px 0px 16px #00ffff;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for VL */
+  .nav-title:hover {
+    color: #ffcc00; /* Cyberpunk Yellow */
+    text-shadow: 0px 0px 10px #ffcc00, 0px 0px 20px #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  /* Navbar Links */
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .navbar ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 8px 16px;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .navbar ul li a:hover {
+    color: #ffcc00;
+    text-shadow: 0px 0px 5px #ffcc00;
+  }
+    
+  /* === Hover Zoom Effect (Point to Zoom) === */
+  .horizontal-container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: stretch;
+  }
+  
+  .photo-section, .name-section, .bio-section {
+    flex: 1;
+    transition: flex 0.4s ease-in-out;
+  }
+  
+  /* Hover to Zoom */
+  .zoomable:hover {
+    flex: 2 !important;
+  }
+  
+  /* === Profile Photo Section === */
+  .photo-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+  }
+  
+  .photo-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* === Name Section (Center) === */
+  .name-section {
+    background: black;
+    color: #00ffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .name-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  /* === Bio Section (Right) === */
+.bio-section {
+    background: linear-gradient(to right, #232526, #414345);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding: 60px;
+}
+
+/* "About Me" Title in Yellow */
+.bio-section h2 {
+    font-size: 2rem;
+    color: #ffcc00; /* Yellow Font */
+    text-shadow: 0px 0px 5px #ffcc00;
+}
+
+/* CV Download Button */
+.cv-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background: #f1f3f5;
+    color: #110000;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+.cv-button:hover {
+    background: #0056b3;
+    transform: scale(1.05);
+}
+ 
+/* === My Education Section (Bigger & More Space for Logos) === */
+.education-container {
+    display: flex;
+    min-height: 70vh; /* Increased Page Size */
+    align-items: center;
+    background: #cac5c5; /* White Background */
+    padding: 50px 8%; /* Increased Padding */
+}
+
+.education-left {
+    width: 80%;
+    text-align: left;
+}
+
+.education-left h2 {
+    font-size: 2.5rem; /* Keep Large Heading */
+    color: #000000;
+    margin-bottom: 25px;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 8px #00a6fb;
+}
+
+/* Education Timeline (Connecting Dots with Extra Space) */
+.education-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 45px; /* Increased Spacing */
+    position: relative;
+    border-left: 3px solid #00a6fb; /* Thicker Line */
+    padding-left: 40px; /* More Space for Logos */
+}
+
+/* Individual Education Item */
+.education-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 30px; /* Larger Box */
+    background: rgba(240, 240, 240, 0.95);
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.education-item:hover {
+    transform: scale(1.03);
+}
+
+/* University Logo */
+.education-item img {
+    width: 100px; /* Increased Logo Size */
+    height: 75px;
+    margin-right: 25px;
+    filter: drop-shadow(0px 0px 6px #00a6fb);
+}
+
+/* Connecting Dot */
+.dot {
+    width: 18px; /* Bigger Dot */
+    height: 18px;
+    background: #00a6fb;
+    border-radius: 50%;
+    position: absolute;
+    left: -50px;
+}
+
+/* Education Details */
+.education-details h3 {
+    font-size: 1.5rem; /* Keep Large Text */
+    color: #000000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.education-details p {
+    font-size: 1rem; /* Keep Text Intact */
+    color: #444;
+    margin-bottom: 5px;
+}
+
+
+/* === Mobile Responsive Adjustments === */
+@media (max-width: 768px) {
+    .education-container {
+        flex-direction: column;
+        min-height: auto;
+        padding-left: 5%;
+    }
+
+    .education-left {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .education-timeline {
+        width: 100%;
+    }
+
+    .education-item img {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+    }
+
+    .dot {
+        width: 12px;
+        height: 12px;
+        left: -30px;
+    }
+}
+
+/* === Projects Section (Dark Gray Background & 6-Project Grid) === */
+.projects-container {
+    background: #2e2e2e; /* Dark Gray Background */
+    text-align: center;
+    padding: 80px 5%;
+}
+
+/* Projects Header */
+.projects-container h2 {
+    font-size: 2.5rem;
+    color: #0ae7e7;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 6px #888888;
+    margin-bottom: 40px;
+}
+
+/* Grid Layout for 6 Projects */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 Columns for 6 Projects */
+    gap: 0; /* No Gaps Between Cards */
+    justify-content: center;
+    width: 100%;
+}
+
+/* Individual Project Card (Clickable) */
+.project-card {
+    background: #383838; /* Darker Gray Background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Remove Underline */
+    color: inherit; /* Keep Default Text Color */
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect - Scale Up */
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Project Video */
+.project-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 3px solid #007bff;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Video Paused by Default */
+.project-video {
+    opacity: 0.7;
+}
+
+/* Play Video on Hover */
+.project-card:hover .project-video {
+    opacity: 1;
+    filter: brightness(1.1);
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.6rem; /* Matches Education Section */
+    color: #ffffff;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Project Description */
+.project-card p {
+    font-size: 1.1rem; /* Matches Education Section */
+    color: #cccccc;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+/* === Mobile Responsive Adjustments === */
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 Columns for Tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        padding: 50px 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 Column for Mobile */
+    }
+
+    .project-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .project-card p {
+        font-size: 0.9rem;
+    }
+}
+
+/* === Skills Section (Gray Background & Horizontal Layout) === */
+.skills-container {
+    background: #d9d9d9; /* Light Gray Background */
+    text-align: center;
+    padding: 80px 0;
+    overflow-x: hidden;
+}
+
+/* Skills Header */
+.skills-container h2 {
+    font-size: 2.5rem;
+    color: #333333;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 6px #888888;
+    margin-bottom: 40px;
+}
+
+/* Full-Width Horizontal Layout */
+.skills-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px; /* Reducing gaps for better alignment */
+    flex-wrap: nowrap; /* Ensure single row */
+    overflow-x: auto;
+    padding: 10px;
+}
+
+/* Full-Width Skills Categories (Edge-to-Edge) */
+.skills-category {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    flex: 1;
+    min-width: 16%;
+    white-space: normal; /* Allows wrapping */
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Hover Effect (Expands When Pointed To) */
+.skills-category:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Skills Category Title */
+.skills-category h3 {
+    font-size: 1.8rem;
+    color: #222222;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px #777777;
+    margin-bottom: 15px;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Skills List */
+.skills-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Aligns the content properly */
+}
+
+/* Skill Items */
+.skills-category ul li {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+    margin: 10px 0; /* Added spacing for readability */
+    flex-wrap: nowrap;
+    justify-content: left; /* Align text and logo properly */
+}
+
+/* Skill Logo */
+.skills-category ul li img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Enlarge Logo on Hover */
+.skills-category ul li a:hover img {
+    transform: scale(1.2);
+}
+
+/* Skill Links */
+.skills-category ul li a {
+    text-decoration: none;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+/* Hover Effect */
+.skills-category ul li a:hover {
+    color: #007bff;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1200px) {
+    .skills-category {
+        min-width: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .skills-grid {
+        flex-wrap: wrap; /* Stack categories when needed */
+    }
+    
+    .skills-category {
+        min-width: 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-category {
+        min-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-category {
+        min-width: 100%;
+    }
+}
+
+/* === Contact Section (Gray Background & Aligned Content) === */
+.contact-container {
+    background: #0f0f0f; /* Light Gray Background */
+    text-align: center;
+    padding: 80px 0;
+}
+
+/* Contact Header */
+.contact-container h2 {
+    font-size: 2.5rem;
+    color: #fff9f9;
+    font-family: 'Orbitron', sans-serif;
+    text-shadow: 0px 0px 6px #faf9f9;
+    margin-bottom: 40px;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Contact Info Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+/* Contact Item (Icons & Links) */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.2rem;
+}
+
+.contact-item img {
+    width: 30px;
+    height: auto;
+}
+
+.contact-item a, .contact-item p {
+    text-decoration: none;
+    color: #888585;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.contact-item a:hover {
+    color: #007bff;
+}
+
+/* Contact Form Section */
+.contact-form {
+    background: #242323;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #e9e2e2;
+    text-align: center;
+}
+
+/* Contact Form Inputs */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Submit Button */
+.contact-form button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 100%;
+}
+
+/* Hover Effect for Button */
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+
+/* === Responsive Adjustments === */
+@media (max-width: 1024px) {
+    .contact-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-info, .contact-form {
+        width: 100%;
+        max-width: 90%;
+    }
+}

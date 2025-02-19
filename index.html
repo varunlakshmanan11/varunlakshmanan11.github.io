@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Varun's Portfolio</title>
+
+  <!-- Google Fonts (Cyberpunk Robotics Style) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap">
+
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-title">Varun</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+      
+  </nav>
+
+  <!-- First Page: Photo, Name, Bio -->
+  <div id="home" class="horizontal-container">
+    
+    <!-- Photo Section (Left - Hover to Zoom) -->
+    <section class="photo-section zoomable">
+      <img src="images/Profile Photo/Pro.jpg" alt="Varun Lakshmanan">
+    </section>
+
+    <!-- Name Section (Center - Hover to Zoom) -->
+    <section class="name-section zoomable">
+      <h1>Varun Lakshmanan</h1>
+        <h3> M.Eng Robotics @ University of Maryland </h3>
+    </section>
+
+    <!-- Bio Section (Right - Hover to Zoom) -->
+    <section class="bio-section zoomable">
+      <h2>About Me</h2>
+      <p>
+        <strong>Hi ! Iam Varun.</strong>
+        <br><br>
+        I am a <strong>Robotics Engineer</strong> with expertise in <strong>Artificial Intelligence, Machine Learning, NLP and Motion Planning</strong>. 
+        My journey in robotics has led me to develop <strong>intelligent decision-making systems</strong> for autonomous agents.
+        <br><br>
+        I have experience building <strong>robot perception systems, Monte Carlo Tree Search (MCTS) algorithms</strong>, 
+        and deep Reinforcement learning-based models to improve human-robot interaction.
+        <br><br>
+        My skill set includes <strong>Deep Learning, Reinforcement Learning, and Computer Vision</strong>, 
+        along with extensive knowledge of <strong>ROS, TensorFlow, PyTorch, and NLP-based AI models, Control systems and Kinematics</strong>.
+      </p>
+
+      <!-- CV Download Link -->
+      <a href="js/Main.pdf" target="_blank" class="cv-button">
+            📄 Download My CV
+     </a>
+    </section>
+
+  </div>
+
+  <!-- My Education Section -->
+    <section id="education" class="education-container">
+        <div class="education-left">
+            <h2>Education</h2>
+            <div class="education-timeline">
+                
+                <!-- Master's Degree -->
+                <div class="education-item">
+                    <img src="images/University Logos/University_of_Maryland_seal.svg.png" alt="University of Maryland Logo">
+                    <div class="dot"></div>
+                    <div class="education-details">
+                        <h3>Master of Engineering (M.Eng) in Robotics</h3>
+                        <p>University of Maryland</p>
+                        <p>College Park, Maryland, United States</p>
+                        <p>August 2023 - Present</p>
+                    </div>
+                </div>
+
+                <!-- Bachelor's Degree -->
+                <div class="education-item">
+                    <img src="images/University Logos/logo.png" alt="Panimalar Institute of Technology Logo">
+                    <div class="dot"></div>
+                    <div class="education-details">
+                        <h3>Bachelor of Engineering (B.E) in Mechanical Engineering</h3>
+                        <p>Panimalar Institute of Technology</p>
+                        <p>Chennai, Tamil Nadu, India</p>
+                        <p>August 2018 - July 2022</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+  
+    <!-- Projects Section -->
+    <section id="projects" class="projects-container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            
+            <!-- Project 1 -->
+            <a href="https://github.com/varunlakshmanan11/Multi-Robot-Naviagtion-Using-Centralized-and-Decentralized-Monte-Carlo-Tree-Search" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/project1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Multi-Robot Navigation in Dynamic Environments Using Centralized and Decentralized Monte Carlo Tree Search</h3>
+                <p>Monte Carlo Tree Search (MCTS) for multi-robot navigation in a dynamic environment. The simulation features four TurtleBot3 Waffle robots in a Gazebo world that includes moving obstacles, making the task more challenging.
+
+                    The goal is to analyze the efficiency of Centralized MCTS (where a global planner coordinates all robots) versus Decentralized MCTS (where each robot makes independent decisions). The presence of dynamic obstacles introduces real-world complexity, requiring the robots to continuously adapt their paths.</p>
+            </a>
+
+            <!-- Project 2 -->
+            <a href="https://github.com/varunlakshmanan11/Performance-Analysis-of-Dueling-Double-DQN-on-TurtleBot3-navigating-in-dynamic-environment" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/project2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Performance Analysis of Dueling Double DQN on TurtleBot3 for Navigation in Dynamic Environments</h3>
+                <p>This project evaluates and compares the Dueling Double Deep Q-Network (Dueling Double DQN) against Vanilla Deep Q-Network (DQN) for navigation in a dynamic Gazebo simulation environment. Using TurtleBot3 and ROS2, we train and test both models to determine which performs better in terms of obstacle avoidance and goal-reaching efficiency.
+
+                </p>
+            </a>
+
+            <!-- Project 3 -->
+            <a href="https://github.com/varunlakshmanan11/Adaptive-Text-to-Command-Translation-for-Robot-Navigation" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/project3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Adaptive Text-to-Command Translation for Robot Navigation</h3>
+                <p> Autonomous Mobile Robot Navigation by integrating Natural Language Processing (NLP) for command-based navigation in a simulated environment. The system fine-tunes a T5-Small model to convert natural language instructions into structured navigation commands, enabling a TurtleBot3 robot to execute multi-step navigation tasks.</p>
+            </a>
+
+            <!-- Project 4 -->
+            <a href="https://github.com/varunlakshmanan11/A_star-Algorithm-Implementation-for-a-Rigid-Robot" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/project4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>A* Algorithm Implementation for a Rigid Robot</h3>
+                <p>Implementation of A* Algorithm for a TurtleBot3 to navigate successfully through the custom made environment in Gazebo</p>
+            </a>
+
+            <!-- Project 5 -->
+            <a href="https://github.com/varunlakshmanan11/Mobile-Pick-and-Place-Manipulator" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/Projects/Mobile Pick and Place Manipulator.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Mobile Pick and Place Manipulator</h3>
+                <p>This Project Involves designing a Mobile Pick and Place Manipulator in Solidworks and Simulating it in Gazebo Environment by using Teleop, Open-loop controllers and Inverse Kinematics.</p>
+            </a>
+
+            <!-- Project 6 -->
+            <a href="https://github.com/yourgithub/ai-vision" target="_blank" class="project-card">
+                <video class="project-video" muted loop>
+                    <source src="videos/project6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>AI Vision for Robots</h3>
+                <p>Built a computer vision system that enables robots to detect objects and perform scene understanding.</p>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-container">
+        <h2>My Skills</h2>
+
+        <div class="skills-grid">
+
+            <!-- Programming Languages -->
+            <div class="skills-category zoomable">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li><a href="https://www.python.org/" target="_blank"><img src="images/Skills Logo/Python-Emblem.png" alt="Python"> Python</a></li>
+                    <li><a href="https://isocpp.org/" target="_blank"><img src="images/Skills Logo/c++ logo.jpeg" alt="C++"> C++</a></li>
+                    <li><a href="https://www.mathworks.com/products/matlab.html" target="_blank"><img src="images/Skills Logo/Matlab_Logo.png" alt="MATLAB"> MATLAB</a></li>
+                </ul>
+            </div>
+
+            <!-- CAD Software -->
+            <div class="skills-category zoomable">
+                <h3>CAD Software</h3>
+                <ul>
+                    <li><a href="https://www.autodesk.com/products/autocad/overview" target="_blank"><img src="images/Skills Logo/AutoCad.jpeg" alt="AutoCAD"> AutoCAD</a></li>
+                    <li><a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank"><img src="images/Skills Logo/AutoDesk Fusion 360.png" alt="Fusion 360"> Fusion 360</a></li>
+                    <li><a href="https://www.ptc.com/en/products/creo" target="_blank"><img src="images/Skills Logo/Creo.jpeg" alt="Creo"> Creo Parametric</a></li>
+                    <li><a href="https://www.solidworks.com/" target="_blank"><img src="images/Skills Logo/Solidworks.jpeg" alt="SolidWorks"> SolidWorks</a></li>
+                    <li><a href="https://www.3ds.com/products-services/catia/" target="_blank"><img src="images/Skills Logo/Catia.jpeg" alt="CATIA"> CATIA</a></li>
+                </ul>
+            </div>
+
+            <!-- Tools & Libraries -->
+            <div class="skills-category zoomable">
+                <h3>Tools & Libraries</h3>
+                <ul>
+                    <li><a href="https://opencv.org/" target="_blank"><img src="images/Skills Logo/OpenCV_logo_black.png" alt="OpenCV"> OpenCV</a></li>
+                    <li><a href="https://numpy.org/" target="_blank"><img src="images/Skills Logo/Numpy.png" alt="NumPy"> NumPy</a></li>
+                    <li><a href="https://scikit-learn.org/" target="_blank"><img src="images/Skills Logo/Scikit Learn.jpeg" alt="Scikit-learn"> Scikit-learn</a></li>
+                    <li><a href="https://pandas.pydata.org/" target="_blank"><img src="images/Skills Logo/Pandas.jpeg" alt="Pandas"> Pandas</a></li>
+                    <li><a href="https://scipy.org/" target="_blank"><img src="images/Skills Logo/scipy.png" alt="SciPy"> SciPy</a></li>
+                    <li><a href="https://developers.google.com/mediapipe" target="_blank"><img src="images/Skills Logo/Media pipe.jpeg" alt="MediaPipe"> MediaPipe</a></li>
+                </ul>
+            </div>
+
+            <!-- Development Tools -->
+            <div class="skills-category zoomable">
+                <h3>Robotics Frameworks</h3>
+                <ul>
+                    <li><a href="https://www.ros.org/" target="_blank"><img src="images/Skills Logo/Logo-ROS_2-Main.jpg" alt="ROS 2"> ROS 2</a></li>
+                </ul>
+            </div>
+
+            <!-- Simulation Software -->
+            <div class="skills-category zoomable">
+                <h3>Simulation Software</h3>
+                <ul>
+                    <li><a href="https://gazebosim.org/" target="_blank"><img src="images/Skills Logo/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo"> Gazebo</a></li>
+                </ul>
+            </div>
+
+            <!-- Machine Learning Frameworks -->
+            <div class="skills-category zoomable">
+                <h3>Machine Learning Frameworks</h3>
+                <ul>
+                    <li><a href="https://pytorch.org/" target="_blank"><img src="images/Skills Logo/Pytorch.png" alt="PyTorch"> PyTorch</a></li>
+                    <li><a href="https://www.tensorflow.org/" target="_blank"><img src="images/Skills Logo/tensorflow-new1255.jpg" alt="TensorFlow"> TensorFlow</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-container">
+        <h2>Let's Connect</h2>
+
+        <div class="contact-grid">
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <img src="images/Contact Logos/Email.png" alt="Email">
+                    <a href="mailto:varunlakshmanan150@gmail.com">varunlakshmanan150@gmail.com</a>
+                </div>
+
+                <div class="contact-item">
+                    <img src="images/Contact Logos/Linkedin.jpeg" alt="LinkedIn">
+                    <a href="https://www.linkedin.com/in/varunlakshmanan11" target="_blank">www.linkedin.com/in/varunlakshmanan11</a>
+                </div>
+
+                <div class="contact-item">
+                    <img src="images/Contact Logos/Github.jpeg" alt="GitHub">
+                    <a href="https://github.com/varunlakshmanan11" target="_blank">https://github.com/varunlakshmanan11</a>
+                </div>
+
+                <div class="contact-item">
+                    <img src="images/Contact Logos/Location.png" alt="Location">
+                    <p>College Park, Maryland, USA</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h3>Send Me a Message</h3>
+                <form action="mailto:varunlakshmanan150@gmail.com" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Varun Lakshmanan. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Link to External JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
