@@ -41,8 +41,8 @@
   
   /* Hover effect for VL */
   .nav-title:hover {
-    color: #ffcc00; /* Cyberpunk Yellow */
-    text-shadow: 0px 0px 10px #ffcc00, 0px 0px 20px #ffcc00;
+    color: #ff0000; /* Cyberpunk Yellow */
+    text-shadow: 0px 0px 10px #f7f6f1, 0px 0px 20px #00fff2;
     transform: scale(1.1);
   }
   
@@ -64,8 +64,8 @@
   }
   
   .navbar ul li a:hover {
-    color: #ffcc00;
-    text-shadow: 0px 0px 5px #ffcc00;
+    color: #ff0000;
+    text-shadow: 0px 0px 5px #f1f0eb;
   }
     
   /* === Hover Zoom Effect (Point to Zoom) === */
@@ -91,7 +91,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: black;
+    background: rgb(20, 20, 20);
   }
   
   .photo-section img {
@@ -103,7 +103,7 @@
   /* === Name Section (Center) === */
   .name-section {
     background: black;
-    color: #00ffff;
+    color: #00ffbf;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -154,10 +154,21 @@
 
 /* Hover Effect */
 .cv-button:hover {
-    background: #0056b3;
+    background: #00b3a4;
     transform: scale(1.05);
 }
- 
+
+@media (max-width: 768px) {
+    .horizontal-container {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .photo-section, .name-section, .bio-section {
+      width: 100%;
+    }
+  }
+  
 /* === My Education Section (Bigger & More Space for Logos) === */
 .education-container {
     display: flex;
@@ -174,10 +185,10 @@
 
 .education-left h2 {
     font-size: 2.5rem; /* Keep Large Heading */
-    color: #000000;
+    color: #252424;
     margin-bottom: 25px;
     font-family: 'Orbitron', sans-serif;
-    text-shadow: 0px 0px 8px #00a6fb;
+    text-shadow: 0px 0px 8px #404646;
 }
 
 /* Education Timeline (Connecting Dots with Extra Space) */
@@ -186,7 +197,7 @@
     flex-direction: column;
     gap: 45px; /* Increased Spacing */
     position: relative;
-    border-left: 3px solid #00a6fb; /* Thicker Line */
+    border-left: 3px solid #00defb; /* Thicker Line */
     padding-left: 40px; /* More Space for Logos */
 }
 
@@ -196,9 +207,9 @@
     align-items: center;
     position: relative;
     padding: 30px; /* Larger Box */
-    background: rgba(240, 240, 240, 0.95);
+    background: rgba(8, 8, 8, 0.95);
     border-radius: 12px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(66, 60, 60, 0.15);
     transition: transform 0.3s ease-in-out;
 }
 
@@ -227,7 +238,7 @@
 /* Education Details */
 .education-details h3 {
     font-size: 1.5rem; /* Keep Large Text */
-    color: #000000;
+    color: #b1b1b1;
     margin-bottom: 5px;
     font-weight: bold;
 }
@@ -272,7 +283,7 @@
 
 /* === Projects Section (Dark Gray Background & 6-Project Grid) === */
 .projects-container {
-    background: #2e2e2e; /* Dark Gray Background */
+    background: #0a0a0a; /* Dark Gray Background */
     text-align: center;
     padding: 80px 5%;
 }
@@ -315,30 +326,17 @@
     transform: scale(1.02);
 }
 
-/* Project Video */
-.project-video {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-bottom: 3px solid #007bff;
-    transition: opacity 0.3s ease-in-out;
-}
-
-/* Video Paused by Default */
-.project-video {
-    opacity: 0.7;
-}
-
-/* Play Video on Hover */
-.project-card:hover .project-video {
-    opacity: 1;
-    filter: brightness(1.1);
+.project-gif {
+    width: 100%;  /* Ensures GIF fills the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds a smooth edge */
+    object-fit: cover; /* Prevents stretching */
 }
 
 /* Project Title */
 .project-card h3 {
     font-size: 1.6rem; /* Matches Education Section */
-    color: #ffffff;
+    color: #00ca87;
     margin: 10px 0;
     font-weight: bold;
 }
@@ -405,19 +403,19 @@
 
 /* Full-Width Skills Categories (Edge-to-Edge) */
 .skills-category {
-    background: #ffffff;
+    background: #080808;
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease-in-out;
     flex: 1;
-    min-width: 16%;
+    min-width: 10%;
     white-space: normal; /* Allows wrapping */
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+ 
 }
 
 /* Hover Effect (Expands When Pointed To) */
@@ -429,9 +427,9 @@
 /* Skills Category Title */
 .skills-category h3 {
     font-size: 1.8rem;
-    color: #222222;
+    color: #05eea0;
     font-weight: bold;
-    text-shadow: 0px 0px 5px #777777;
+    text-shadow: 0px 0px 5px #e6dbdb;
     margin-bottom: 15px;
     text-align: center;
     padding: 10px;
@@ -471,7 +469,7 @@
 /* Skill Links */
 .skills-category ul li a {
     text-decoration: none;
-    color: #222;
+    color: #fafdfd;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -600,10 +598,11 @@
 
 /* Submit Button */
 .contact-form button {
-    background: #007bff;
-    color: white;
+    background: #00ffd5;
+    color: rgb(245, 19, 19);
     padding: 10px 15px;
     font-size: 1.2rem;
+    font-family: 'Orbitron', sans-serif;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -630,4 +629,20 @@
         width: 100%;
         max-width: 90%;
     }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #111;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
 }
