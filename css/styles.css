@@ -320,7 +320,6 @@
     width: 18px; /* Bigger Dot */
     height: 18px;
     background: #00a6fb;
-    border-radius: 50%;
     position: absolute;
     left: -50px;
 }
@@ -419,7 +418,6 @@
 .project-gif {
     width: 100%;  /* Ensures GIF fills the container */
     height: auto; /* Maintains aspect ratio */
-    border-radius: 10px; /* Adds a smooth edge */
     object-fit: cover; /* Prevents stretching */
 }
 
