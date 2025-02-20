@@ -247,7 +247,16 @@
     .bio-section {
         padding: 20px; /* Reduce padding for small screens */
     }
+
+    .cv-button {
+        padding: 10px 15px; /* Smaller button */
+        font-size: 1rem; /* Smaller font */
+    }
     
+    .touch-zoom {
+        transform: scale(1.05);
+        transition: transform 0.4s ease-in-out;
+    }
 }
   
 /* === My Education Section (Bigger & More Space for Logos) === */

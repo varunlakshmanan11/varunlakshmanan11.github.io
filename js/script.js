@@ -79,4 +79,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   window.addEventListener('scroll', checkScroll);
   checkScroll(); // Run once on load
+
+  element.addEventListener('touchend', function () {
+    this.classList.remove('touch-zoom');
+  });
 });
+
