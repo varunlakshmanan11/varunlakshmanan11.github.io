@@ -80,91 +80,64 @@
   }
   
 
+/* --- Mobile Styles --- */
 @media (max-width: 768px) {
-    /* Hide the desktop navbar sections */
-    .nav-left,
-    .nav-center,
-    .nav-right {
-    display: none;
-    }
-
-    /* Show the mobile navbar container */
-    .mobile-navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(34, 30, 30, 0.95);
-    padding: 10px 20px;
-    z-index: 1000;
-    }
-
-    /* Hamburger icon on mobile (left-aligned) */
+    /* Show the hamburger icon on mobile and position it at the left */
     .menu-icon {
-    position: absolute;
-    left: 20px;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #00ffff;
-    text-shadow: 0 0 8px #00ffff;
+        display: block;
+        position: absolute;
+        left: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+        color: #00ffff;
+        text-shadow: 0 0 8px #00ffff;
     }
-
-    /* Mobile title centered */
-    .mobile-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #00ffff;
-    font-family: 'Orbitron', sans-serif;
-    text-transform: uppercase;
-    text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+    
+    /* Center the title in the nav container on mobile */
+    .nav-container {
+        justify-content: center;
     }
-
-    /* Off-canvas mobile nav links */
-    .mobile-nav-links {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 60px; /* Below the mobile navbar */
-    left: -100%; /* Hidden off-screen to the left */
-    width: 80%;
-    height: 100%;
-    background: rgba(34, 30, 30, 0.95);
-    padding-top: 20px;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1001;
-    overflow-y: auto;
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    
+    /* Mobile navigation (off-canvas menu) */
+    .mobile-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 80%;          /* Adjust the width as needed */
+        max-width: 300px;    /* Optional max width */
+        height: 100%;
+        background: rgba(34, 30, 30, 0.95);
+        list-style: none;
+        padding-top: 60px;   /* Push the links below the navbar */
+        margin: 0;
+        transform: translateX(-100%);  /* Start off-canvas to the left */
+        transition: transform 0.3s ease-in-out;
+        z-index: 1001;
     }
-
-    .mobile-nav-links li {
-    width: 100%;
-    border-bottom: 1px solid #333;
+    
+    /* When active, slide the menu into view */
+    .mobile-nav.active {
+        transform: translateX(0);
     }
-
-    .mobile-nav-links li a {
-    display: block;
-    padding: 15px 20px;
-    font-size: 1.5rem;
-    color: #00ffff;
-    text-decoration: none;
+    
+    .mobile-nav li {
+        width: 100%;
+        border-bottom: 1px solid #444;
     }
-
-    .mobile-nav-links li a:hover {
-    background: #333;
-    color: #ff0000;
+    
+    .mobile-nav li a {
+        display: block;
+        padding: 15px 20px;
+        font-size: 1.5rem;
+        color: #00ffff;
+        text-decoration: none;
     }
-
-    /* When active, slide the menu in from the left */
-    .mobile-nav-links.active {
-    transform: translateX(100%);
+    
+    .mobile-nav li a:hover {
+        background-color: #333;
+        color: #ff0000;
     }
 }
-  
-
   
 /* === Hover Zoom Effect (Point to Zoom) === */
   .horizontal-container {
