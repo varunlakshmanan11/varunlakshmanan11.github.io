@@ -14,8 +14,8 @@
     transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
   }
   
-  /* === Cyberpunk-Inspired "VL" Navbar === */
-  .navbar {
+  /* === General Navbar Styles === */
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;
@@ -25,55 +25,43 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-  }
-  
-  .nav-title {
+}
+
+/* Navbar Title */
+.nav-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #00ffff; /* Cyberpunk Cyan */
+    color: #00ffff;
     font-family: 'Orbitron', sans-serif;
-    letter-spacing: 3px;
     text-transform: uppercase;
-    padding-left: 20px;
-    text-shadow: 0px 0px 8px #00ffff, 0px 0px 16px #00ffff;
-    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
-  }
-  
-  /* Hover effect for VL */
-  .nav-title:hover {
-    color: #ff0000; /* Cyberpunk Yellow */
-    text-shadow: 0px 0px 10px #f7f6f1, 0px 0px 20px #00fff2;
-    transform: scale(1.1);
-  }
-  
-  /* Navbar Links */
-  .navbar ul {
+    text-shadow: 0px 0px 8px #00ffff;
+}
+
+/* Default Desktop Menu */
+.navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center;
     gap: 20px;
-  }
-  
-  .navbar ul li a {
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Items */
+.navbar ul li a {
     color: #00ffff;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 8px 16px;
     transition: 0.3s;
-    font-weight: bold;
-  }
-  
-  .navbar ul li a:hover {
-    color: #ff0000;
-    text-shadow: 0px 0px 5px #f1f0eb;
-  }
+}
 
-  /* Hide Hamburger Menu by Default */
-  .menu-icon {
-    display: none;
-  }
-    
-  @media (max-width: 768px) {
+/* Hover Effect */
+.navbar ul li a:hover {
+    color: #ffcc00;
+}
+
+/* === Mobile Navbar === */
+@media (max-width: 768px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -86,10 +74,9 @@
         cursor: pointer;
         color: #00ffff;
         text-shadow: 0px 0px 8px #00ffff;
-        margin-left: 20px;
     }
 
-    /* Hide menu initially using `display: none;` */
+    /* Hide menu initially */
     .navbar ul {
         flex-direction: column;
         position: absolute;
@@ -98,8 +85,7 @@
         width: 100%;
         background: rgba(34, 30, 30, 0.95);
         padding: 10px 0;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        display: none; /* Hides menu initially */
+        display: none; /* Ensures menu is hidden initially */
     }
 
     .navbar ul li {
@@ -113,20 +99,20 @@
         width: 100%;
         font-size: 1.5rem;
         color: #00ffff;
-        text-decoration: none;
-        transition: 0.3s ease-in-out;
-    }
-
-    .navbar ul li a:hover {
-        background-color: #333;
-        color: #ff0000;
     }
 
     /* Show menu when active */
-    .navbar.active ul {
+    .navbar ul.active {
         display: flex;
         flex-direction: column;
         animation: fadeIn 0.3s ease-in-out;
+    }
+}
+
+/* Hide Hamburger Icon on PC */
+@media (min-width: 769px) {
+    .menu-icon {
+        display: none; /* Hides on larger screens */
     }
 }
 
@@ -135,6 +121,7 @@
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
 
   
 /* === Hover Zoom Effect (Point to Zoom) === */
