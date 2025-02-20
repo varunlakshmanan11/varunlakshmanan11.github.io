@@ -73,11 +73,12 @@
         display: none;
     }
     
-    /* Mobile Navbar */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 20px;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     /* Show Hamburger Icon */
@@ -89,7 +90,7 @@
         text-shadow: 0px 0px 8px #00ffff;
     }
 
-    /* Hide menu initially using `opacity` and `visibility` for smoother toggle */
+    /* Hide menu initially using `display: none;` */
     .navbar ul {
         flex-direction: column;
         position: absolute;
@@ -99,9 +100,7 @@
         background: rgba(34, 30, 30, 0.95);
         padding: 10px 0;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        opacity: 0;
-        visibility: hidden;
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+        display: none; /* This ensures menu is initially hidden */
     }
 
     .navbar ul li {
@@ -116,18 +115,12 @@
     }
 
     /* Show menu when active */
-    .navbar ul.active {
-        opacity: 1;
-        visibility: visible;
+    .navbar.active ul {
+        display: flex;
+        flex-direction: column;
     }
 }
 
-/* Hide menu icon on larger screens */
-@media (min-width: 769px) {
-    .menu-icon {
-        display: none;
-    }
-}
   
 /* === Hover Zoom Effect (Point to Zoom) === */
   .horizontal-container {
