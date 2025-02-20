@@ -14,19 +14,42 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-title">Varun</div>
-            <div class="menu-icon" id="menu-icon">☰</div> <!-- Hamburger Menu -->
+        <!-- Desktop: left side for title -->
+        <div class="nav-left">
+          <div class="nav-title">Varun</div>
         </div>
-        <ul id="nav-links">
+      
+        <!-- Desktop: center for nav links -->
+        <div class="nav-center">
+          <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      
+        <!-- Desktop: right side (empty for now) -->
+        <div class="nav-right">
+          <!-- This container is empty on desktop -->
+        </div>
+      
+        <!-- Mobile-only elements: hamburger icon and off-canvas nav -->
+        <div class="mobile-navbar">
+          <div class="menu-icon" id="menu-icon">☰</div>
+          <div class="mobile-title">Varun</div>
+        </div>
+        <!-- Off-canvas mobile nav links -->
+        <ul class="mobile-nav-links" id="mobile-nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-    </nav>
-    
+      </nav>
+      
 
   <!-- First Page: Photo, Name, Bio -->
   <div id="home" class="horizontal-container">
