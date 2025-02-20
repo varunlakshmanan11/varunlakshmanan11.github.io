@@ -15,8 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
           if (!menuIcon.contains(event.target) && !mobileNav.contains(event.target)) {
               mobileNav.classList.remove("active");
               menuIcon.textContent = "☰";
-              // Optionally toggle icon if desired:
-              menuIcon.textContent = mobileNav.classList.contains("active") ? "✖" : "☰";
           }
       });
 
@@ -24,7 +22,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.querySelectorAll("#mobile-nav a").forEach(link => {
           link.addEventListener("click", function () {
               mobileNav.classList.remove("active");
-              menuIcon.textContent = "☰";
           });
       });
   }
