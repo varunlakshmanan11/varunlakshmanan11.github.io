@@ -100,24 +100,19 @@
     
     /* Mobile navigation (off-canvas menu) */
     .mobile-nav {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 80%;          /* Adjust the width as needed */
-        max-width: 300px;    /* Optional max width */
-        height: 100%;
-        background: rgba(34, 30, 30, 0.95);
-        list-style: none;
-        padding-top: 60px;   /* Push the links below the navbar */
-        margin: 0;
-        transform: translateX(-100%);  /* Start off-canvas to the left */
-        transition: transform 0.3s ease-in-out;
-        z-index: 1001;
+      position: fixed;
+      top: 0;
+      left: -100%;  /* Hide off-canvas initially */
+      width: 80%;   /* Or set a max-width like 300px */
+      height: 100%;
+      background: rgba(34, 30, 30, 0.95);
+      transition: transform 0.3s ease-in-out;
+      z-index: 1001;
     }
     
     /* When active, slide the menu into view */
     .mobile-nav.active {
-        transform: translateX(0);
+        transform: translateX(100%);
     }
     
     .mobile-nav li {
