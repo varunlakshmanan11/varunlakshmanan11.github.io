@@ -75,8 +75,6 @@
     
   @media (max-width: 768px) {
     .navbar {
-        justify-content: space-between;
-        padding: 10px 20px;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -88,6 +86,7 @@
         cursor: pointer;
         color: #00ffff;
         text-shadow: 0px 0px 8px #00ffff;
+        margin-left: 20px;
     }
 
     /* Hide menu initially using `display: none;` */
@@ -100,7 +99,7 @@
         background: rgba(34, 30, 30, 0.95);
         padding: 10px 0;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-        display: none; /* This ensures menu is initially hidden */
+        display: none; /* Hides menu initially */
     }
 
     .navbar ul li {
@@ -110,15 +109,31 @@
 
     .navbar ul li a {
         display: block;
-        padding: 10px;
+        padding: 15px;
         width: 100%;
+        font-size: 1.5rem;
+        color: #00ffff;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #333;
+        color: #ff0000;
     }
 
     /* Show menu when active */
     .navbar.active ul {
         display: flex;
         flex-direction: column;
+        animation: fadeIn 0.3s ease-in-out;
     }
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
   

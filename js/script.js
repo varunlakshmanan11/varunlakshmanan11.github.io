@@ -1,28 +1,33 @@
-document.addEventListener("DOMContentLoaded", function () {
-  // ======= HAMBURGER MENU FUNCTIONALITY =======
-  const menuIcon = document.querySelector(".menu-icon");
-  const navbarMenu = document.querySelector(".navbar ul");
-  const menuLinks = navbarMenu.querySelectorAll("a");
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuIcon = document.querySelector(".menu-icon");
+    const navbar = document.querySelector(".navbar");
+    const navbarMenu = document.querySelector(".navbar ul");
+    const menuLinks = navbarMenu.querySelectorAll("a");
 
-  if (menuIcon && navbarMenu) {
-    menuIcon.addEventListener("click", function () {
-      navbarMenu.classList.toggle("active");
-    });
+    function toggleMenu() {
+        navbar.classList.toggle("active"); // Toggle active class on navbar
+    }
 
-    // Close menu when clicking outside
-    document.addEventListener("click", function (event) {
-      if (!menuIcon.contains(event.target) && !navbarMenu.contains(event.target)) {
-        navbarMenu.classList.remove("active");
-      }
-    });
+    if (menuIcon && navbarMenu) {
+        menuIcon.addEventListener("click", function () {
+            toggleMenu();
+        });
 
-    // Close menu when clicking a link
-    menuLinks.forEach((link) => {
-      link.addEventListener("click", function () {
-        navbarMenu.classList.remove("active");
-      });
-    });
-  }
+        // Close menu when clicking outside
+        document.addEventListener("click", function (event) {
+            if (!menuIcon.contains(event.target) && !navbar.contains(event.target)) {
+                navbar.classList.remove("active");
+            }
+        });
+
+        // Close menu when clicking a link
+        menuLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+                navbar.classList.remove("active");
+            });
+        });
+    }
+  });
 
   // ======= HOVER ZOOM EFFECT (Point to Zoom) =======
   const zoomableSections = document.querySelectorAll('.zoomable');
