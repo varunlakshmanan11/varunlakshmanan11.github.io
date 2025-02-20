@@ -27,16 +27,17 @@
     z-index: 1000;
 }
 
-/* Navbar Title */
 .nav-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #00ffff;
+    color: #00ffff; /* Cyberpunk Cyan */
     font-family: 'Orbitron', sans-serif;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    text-shadow: 0px 0px 8px #00ffff;
+    padding-left: 20px;
+    text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;  /* Glowing effect */
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
-
 /* Default Desktop Menu */
 .navbar ul {
     list-style: none;
@@ -86,6 +87,9 @@
         background: rgba(34, 30, 30, 0.95);
         padding: 10px 0;
         display: none; /* Ensures menu is hidden initially */
+        max-height: calc(100vh - 60px); /* Occupies remaining viewport height */
+        overflow-y: auto;        /* Allows scrolling within the menu if needed */
+        z-index: 1001; 
     }
 
     .navbar ul li {
@@ -227,12 +231,13 @@
     .bio-section {
         width: 100%;
         text-align: center;
+        margin-bottom: 20px;
     }
 
     .photo-section img {
-        max-width: 70%; /* Prevent too large images */
+        max-width: 90%; /* Prevent too large images */
         height: auto;
-        border-radius: 10px;
+       
     }
 
     .name-section h1 {
