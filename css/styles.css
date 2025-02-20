@@ -75,7 +75,7 @@
   
   /* Hide mobile-only elements on desktop */
   .mobile-navbar,
-  .mobile-nav-links {
+  .mobile-nav {
     display: none;
   }
   
