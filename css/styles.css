@@ -93,6 +93,7 @@
     /* Mobile Navbar: Container for hamburger and title */
     .mobile-navbar {
       position: relative;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: center; /* Title will be centered */
@@ -127,11 +128,13 @@
     .mobile-nav {
       position: fixed;
       top: 0;
-      left: -100%; /* Hidden off-canvas initially */
+      left: 0%; /* Hidden off-canvas initially */
       width: 80%;  /* Adjust as needed */
       max-width: 300px; /* Optional max-width */
       height: 100%;
       background: rgba(34, 30, 30, 0.95);
+      padding-top: 60px;  /* To leave room for the mobile-navbar */
+      transform: translateX(-100%);  /* Hide it completely off-screen */
       transition: transform 0.3s ease-in-out;
       z-index: 1001;
       /* Optional: add padding to push content below the mobile navbar */
