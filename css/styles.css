@@ -83,6 +83,9 @@
 /* --- Mobile Styles --- */
 @media (max-width: 768px) {
     /* Show the hamburger icon on mobile and position it at the left */
+    .nav-left, .nav-center, .nav-right {
+        display: none;
+    }
     .menu-icon {
         display: block;
         position: absolute;
