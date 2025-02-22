@@ -20,7 +20,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 15px 20px;
-    background: rgba(243, 239, 239, 0.274);
+    background: rgba(243, 239, 239, 0.76);
     position: sticky;
     top: 0;
     width: 100%;
@@ -35,21 +35,21 @@
   .nav-title {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #00ff95;
+    color: #111111;
     font-family: 'Orbitron', sans-serif;
     text-transform: uppercase;
-    text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+    text-shadow: 0 0 8px #b3b6b6, 0 0 16px #feffff;
     transition: text-shadow 0.3s ease, color 0.3s ease;
   }
 
   .nav-title:hover {
     /* A multi-layer text-shadow creates a neon glow effect */
     text-shadow:
-      0 0 5px #00ff0d,
-      0 0 10px #00ffea,
-      0 0 20px #00fff2,
-      0 0 40px #00ff15;
-    color: #ff0000; /* You can also change the text color if desired */
+      0 0 5px #868887,
+      0 0 10px #5c5e5e,
+      0 0 20px #696b6b,
+      0 0 40px #232423;
+    color: #011111; /* You can also change the text color if desired */
   }
   
   /* Desktop - Center: Nav Links */
@@ -66,7 +66,7 @@
   }
   
   .nav-links li a {
-    color: #00ffff;
+    color: #2a2b2be7;
     text-decoration: none;
     font-size: 1.2rem;
     padding: 8px 16px;
@@ -74,7 +74,7 @@
   }
   
   .nav-links li a:hover {
-    color: #ffcc00;
+    color: #05d8bc;
   }
   
   /* Desktop - Right (empty container) */
@@ -109,7 +109,7 @@
       align-items: center;
       justify-content: center; /* Title will be centered */
       padding: 10px 20px;
-      background: rgba(243, 239, 239, 0.274); /* Same as desktop or adjust as needed */
+      background: rgba(156, 154, 154, 0.952); /* Same as desktop or adjust as needed */
       z-index: 1000;
     }
     
@@ -121,18 +121,18 @@
       transform: translateY(-50%);
       font-size: 2rem;
       cursor: pointer;
-      color: #00ffff;
-      text-shadow: 0 0 8px #00ffff;
+      color: #505252;
+      text-shadow: 0 0 8px #a0a3a3;
     }
     
     /* Mobile Title: Centered */
     .mobile-navbar .mobile-title {
       font-size: 2.5rem;
       font-weight: bold;
-      color: #ff1100;
+      color: #000000;
       font-family: 'Orbitron', sans-serif;
       text-transform: uppercase;
-      text-shadow: 0 0 8px #00ffff, 0 0 16px #00ffff;
+      text-shadow: 0 0 8px #848686, 0 0 16px #949797;
     }
     
     /* Mobile Navigation Off-Canvas Menu */
@@ -143,7 +143,7 @@
       width: 80%;  /* Adjust as needed */
       max-width: 300px; /* Optional max-width */
       height: 100%;
-      background: rgba(34, 30, 30, 0.95);
+      background: rgba(201, 197, 197, 0.925);
       padding-top: 60px;  /* To leave room for the mobile-navbar */
       transform: translateX(-100%);  /* Hide it completely off-screen */
       transition: transform 0.3s ease-in-out;
@@ -166,13 +166,13 @@
       display: block;
       padding: 15px 20px;
       font-size: 1.5rem;
-      color: #00ffff;
+      color: #2f3030;
       text-decoration: none;
     }
     
     .mobile-nav li a:hover {
       background-color: #333;
-      color: #ff0000;
+      color: #00ffb3;
     }
   }
   
@@ -240,8 +240,8 @@
   
   .bio-section h2 {
     font-size: 2rem;
-    color: #ffcc00;
-    text-shadow: 0 0 5px #ffcc00;
+    color: #00ff9d;
+    text-shadow: 0 0 5px #00ffff;
   }
   
   /* CV Download Button */
@@ -469,7 +469,7 @@
 /* Project Title */
 .project-card h3 {
     font-size: 1.6rem; /* Matches Education Section */
-    color: #00ca87;
+    color: #9fa8a8;
     margin: 10px 0;
     font-weight: bold;
 }
@@ -560,9 +560,9 @@
 /* Skills Category Title */
 .skills-category h3 {
     font-size: 1.8rem;
-    color: #ee0505;
+    color: #070303;
     font-weight: bold;
-    text-shadow: 0px 0px 5px #e6dbdb;
+    text-shadow: 0px 0px 5px #b9b2b2;
     margin-bottom: 15px;
     text-align: center;
     padding: 10px;
