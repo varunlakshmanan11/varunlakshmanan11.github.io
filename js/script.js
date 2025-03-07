@@ -85,7 +85,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Submit to Formspree
         fetch('https://formspree.io/f/mqaenyed', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
+          headers: { 'Content-Type': 'application/json',
+                     'Accept': 'application/json'
+           },
           body: JSON.stringify(formData)
         })
         .then(async (response) => {
