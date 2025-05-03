@@ -116,3 +116,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   
+  // ======= SCROLL FADE-IN ANIMATION =======
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible"); // fade-out when not in view
+      }
+    });
+  }, { threshold: 0.1 });
+  
+  document.querySelectorAll(".fade-in").forEach(el => observer.observe(el));
+  
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+      } else {
+        entry.target.classList.remove("visible"); // for fade-out
+      }
+    });
+  }, { threshold: 0.2 });
+  
+  document.querySelectorAll(".fade-section").forEach(el => {
+    fadeObserver.observe(el);
+  });
+  
