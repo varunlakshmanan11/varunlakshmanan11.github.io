@@ -634,13 +634,13 @@
     }
     
     .skills-category {
-        min-width: 30%;
+        min-width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .skills-category {
-        min-width: 45%;
+        min-width: 100%;
     }
 }
 
