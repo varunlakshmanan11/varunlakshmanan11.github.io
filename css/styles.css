@@ -654,7 +654,8 @@
 
 @media (max-width: 480px) {
     .skills-category {
-        min-width: 100%;
+        max-width: 100%;
+        flex: 0 1 100%; /* Full width on mobile */        
     }
 }
 
