@@ -630,17 +630,16 @@
 @media (max-width: 1024px) {
     .skills-grid {
         flex-wrap: wrap; /* Stack categories when needed */
-        height: auto;
     }
     
     .skills-category {
-        min-width: 100%;
+        min-width: 30%;
     }
 }
 
 @media (max-width: 768px) {
     .skills-category {
-        min-width: 100%;
+        min-width: 45%;
     }
 }
 
