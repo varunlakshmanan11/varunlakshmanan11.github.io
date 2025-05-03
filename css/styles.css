@@ -638,10 +638,19 @@
 }
 
 @media (max-width: 768px) {
-    .skills-category {
-        min-width: 45%;
-    }
+  .skills-grid {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .skills-category {
+    flex: 0 1 80%;
+    max-width: 80%;
+    min-width: unset;
+  }
 }
+
 
 @media (max-width: 480px) {
     .skills-category {
