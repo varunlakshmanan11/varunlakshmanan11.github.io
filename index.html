@@ -4,23 +4,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Varun Lakshmanan | Robotics Software Engineer</title>
-  <meta name="description" content="Robotics Software Engineer specializing in perception and autonomy. ROS 2, PyTorch, computer vision, UAV systems, and robot learning." />
-  <meta property="og:title" content="Varun Lakshmanan | Robotics Software Engineer" />
-  <meta property="og:description" content="Perception and autonomy engineer. Real-time vision pipelines, UAV fire localization, multi-robot planning." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://varun-robotics.com/" />
-  <meta property="og:image" content="https://varun-robotics.com/images/Profile Photo/Pro.png" />
-
-  <!-- Google Fonts (Cyberpunk Robotics Style) -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap">
-
-  <!-- Link to External CSS -->
-  <link rel="stylesheet" href="css/styles.css?v=4.2" />
+  <meta name="description" content="Robotics Software Engineer specializing in perception, autonomy, and simulation. ROS 2, PyTorch, computer vision, UAV systems, and robot learning.">
+  <meta property="og:title" content="Varun Lakshmanan | Robotics Software Engineer">
+  <meta property="og:description" content="Perception, autonomy and simulation engineer. Real-time vision pipelines, UAV fire localization, multi-robot planning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://varun-robotics.com/">
+  <meta property="og:image" content="https://varun-robotics.com/images/Profile Photo/Pro.png">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=5.6" />
 </head>
 <body>
 
-
-  <!-- Intro name animation overlay -->
   <div id="intro" aria-hidden="true">
     <div class="intro-name" id="intro-name">
       <span class="intro-word"><span class="ltr fixed">V</span><span class="ltr" style="transition-delay:152ms">A</span><span class="ltr" style="transition-delay:114ms">R</span><span class="ltr" style="transition-delay:76ms">U</span><span class="ltr" style="transition-delay:38ms">N</span></span>
@@ -29,382 +23,196 @@
     </div>
   </div>
 
-    <nav class="navbar">
-        <!-- Desktop: left side for title -->
-        <div class="nav-left">
-          <div class="nav-title" id="nav-title">Varun Lakshmanan</div>
-        </div>
-      
-        <!-- Desktop: center for nav links -->
-        <div class="nav-center">
-          <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      
-        <!-- Desktop: right side (empty for now) -->
-        <div class="nav-right">
-          <!-- This container is empty on desktop -->
-        </div>
-      
-        <!-- Mobile-only elements: hamburger icon and off-canvas nav -->
-        <div class="mobile-navbar">
-          <div class="menu-icon" id="menu-icon">☰</div>
-          <div class="mobile-title">Varun Lakshmanan</div>
-        </div>
-        <!-- Off-canvas mobile nav links -->
-        <ul class="mobile-nav" id="mobile-nav">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-      
+  <nav class="navbar">
+    <div class="nav-title" id="nav-title">Varun Lakshmanan</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#simulation">Simulation</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#foundation">Foundation</a></li>
+      <li><a href="#builds">Builds</a></li>
+      <li><a href="#stacks">Stacks</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="menu-icon" id="menu-icon">&#9776;</div>
+  </nav>
+  <div class="mobile-nav" id="mobile-nav">
+    <div class="mobile-title">Varun Lakshmanan</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#simulation">Simulation</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#foundation">Foundation</a></li>
+      <li><a href="#builds">Builds</a></li>
+      <li><a href="#stacks">Stacks</a></li>
+      <li><a href="#certs">Certs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
 
-  <!-- Hero v4: photo left, title right, fade-in together then split -->
-  <div id="home" class="hero-stage v4" >
-    <div class="hero-photo-col" id="hero-photo">
+  <!-- ============ 1. HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-left" id="hero-photo">
       <img src="images/Profile Photo/Pro.png" alt="Varun Lakshmanan">
-    </div>
-    <div class="hero-title-col">
-      <h1 class="hero-tag">Robotics Software Engineer</h1>
-      <p class="hero-sub">Perception, Simulation &amp; Autonomy</p>
-      <p class="hover-hint">Hover to read about me</p>
-    </div>
-    <div class="about-overlay">
-      <div class="about-inner">
-        <h2>The best autonomous systems, much like the best engineers, are built on quiet observation.</h2>
-        <div class="about-scroll">
-          <p>
-            Hi, I’m Varun! As an introverted builder, my comfort zone is deep, focused work. I am currently a Robotics Software Engineer at Anthropilot, where I build production perception systems—integrating state-of-the-art transformer models like RT-DETR-L into real-time vision pipelines and optimizing edge deployments to drastically reduce manual intervention.<br><br>
-            
-            With a Master’s in Robotics from the University of Maryland and a foundational degree in Mechanical Engineering, I bridge the gap between artificial intuition and physical kinematics. I rely heavily on digital twins, architecting multi-robot navigation and training reinforcement learning policies in Isaac Sim and Gazebo. Whether I am optimizing sub-100ms latency on UAV edge hardware (VOXL 2) or deploying complex motion planning, I perfect the logic in simulation before unleashing it into the chaos of the real world.<br><br>
-            
-            The robotics landscape evolves rapidly, and my response is a quiet, continuous pursuit of knowledge. From mastering hardware acceleration in modern CUDA C++ to advanced Deep Learning architectures, I treat my own skill set like a neural network: constantly training, iterating, and upgrading.<br><br>
-            
-            Let’s connect and engineer systems that are intelligent, deterministic, and mechanically sound!
-          </p>
+      <div class="about-overlay">
+        <div class="about-inner">
+          <h2>The best autonomous systems, much like the best engineers, are built on quiet observation.</h2>
+          <div class="about-scroll">
+            <p>Hi, I&rsquo;m Varun! As an introverted builder, my comfort zone is deep, focused work. I am currently a Robotics Software Engineer at Anthropilot, where I build production perception systems, integrating state-of-the-art transformer models like RT-DETR-L into real-time vision pipelines and optimizing edge deployments to drastically reduce manual intervention.</p>
+            <p>With a Master&rsquo;s in Robotics from the University of Maryland and a foundational degree in Mechanical Engineering, I bridge the gap between artificial intuition and physical kinematics. I rely heavily on digital twins, architecting multi-robot navigation and training reinforcement learning policies in Isaac Sim and Gazebo. Whether I am optimizing sub-100ms latency on UAV edge hardware (VOXL 2) or deploying complex motion planning, I perfect the logic in simulation before unleashing it into the chaos of the real world.</p>
+            <p>The robotics landscape evolves rapidly, and my response is a quiet, continuous pursuit of knowledge. From mastering hardware acceleration in modern CUDA C++ to advanced Deep Learning architectures, I treat my own skill set like a neural network: constantly training, iterating, and upgrading.</p>
+            <p>Let&rsquo;s connect and engineer systems that are intelligent, deterministic, and mechanically sound!</p>
+          </div>
+          <a href="Resume/Resume_Varun.pdf" target="_blank" class="cv-button">&#128196; Download My CV</a>
         </div>
-        <a href="Resume/Resume_Varun.pdf" target="_blank" class="cv-button">📄 Download My CV</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <h1 class="hero-tag">ROBOTICS SOFTWARE ENGINEER</h1>
+      <p class="hero-sub">Perception &amp; Autonomy&nbsp;&nbsp;|&nbsp;&nbsp;Simulation</p>
+      <p class="hero-quote">"I perfect the logic in simulation before unleashing it into the chaos of the real world."</p>
+      <p class="hover-hint">Hover the photo to read about me</p>
+    </div>
+  </section>
+
+  <!-- ============ 2. TRY THE SIMULATION ============ -->
+  <section id="simulation" class="sim-section">
+    <h2 class="scramble-title" data-text="TRY THE SIMULATION">TRY THE SIMULATION</h2>
+    <p class="sim-hint">Click any free cell. The robot plans a collision free path with A* and drives it. Red zones are obstacles.</p>
+    <div class="sim-wrap">
+      <canvas id="botCanvas" width="600" height="600"></canvas>
+      <div class="sim-readout mono" id="simReadout">
+        <span>PATH: <b id="p1">0</b></span>
+        <span>NODES EXPANDED: <b id="p2">0</b></span>
+        <span>TARGETS: <b id="simScore">0</b></span>
+        <span id="simStatus">STATUS: IDLE</span>
+      </div>
+      <button class="sim-reset mono" id="simReset">RESET MAP</button>
+    </div>
+  </section>
+
+  <!-- ============ 3. MY WORK ============ -->
+  <section id="work" class="story-section wave-section">
+    <h2 class="scramble-title" data-text="MY WORK">MY WORK</h2>
+    <div class="story-grid">
+      <div class="story-left">
+        <img class="story-logo" src="images/Company Logos/Anthropilot.png" alt="Anthropilot Inc. logo">
+        <h3>Anthropilot Inc.</h3>
+        <p class="story-role">Robotics Software Engineer &nbsp;&middot;&nbsp; Remote</p>
+        <div class="tele-bare">
+          <div class="tele-item"><span class="tl mono">VALIDATION</span><span class="tv scr" data-text="900+ IMAGES"></span></div>
+          <div class="tele-item"><span class="tl mono">DURATION</span><span class="tv scr" data-text="SEP 2025 - PRESENT"></span></div>
+        </div>
+      </div>
+      <div class="story-right" style="--bg-img:url('images/Backgrounds/detection-bg.jpg')">
+        <p class="story-caption">Where research meets the production line.</p>
+        <p>At Anthropilot, I turned a state-of-the-art transformer detector, <b>RT-DETR-L</b>, from a pretrained checkpoint into a dependable pair of eyes inside a <b>real-time Python vision runtime</b>. That meant architecting the full inference pipeline end to end: how frames arrive, how masks get cleaned, and how each detection earns the system's trust before it is allowed to act.</p>
+        <p>The heart of the work is judgment under uncertainty. I designed <b>confidence-gated safe/unsafe classification</b> and mask post-processing logic so the system knows when to proceed on its own and when to raise its hand, and I instrumented <b>run-level telemetry</b> throughout, so deployment readiness is measured, not assumed. It is quiet, careful engineering: the kind that lets a robot make the easy calls itself and saves human attention for the moments that genuinely need it.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. MY FOUNDATION ============ -->
+  <section id="foundation" class="story-section wave-section">
+    <h2 class="scramble-title" data-text="MY FOUNDATION">MY FOUNDATION</h2>
+
+    <div class="story-grid">
+      <div class="story-left">
+        <img class="story-logo" src="images/University Logos/University_of_Maryland_seal.svg.png" alt="University of Maryland seal">
+        <h3>University of Maryland</h3>
+        <p class="story-role">M.Eng in Robotics &nbsp;&middot;&nbsp; College Park, MD</p>
+        <div class="tele-bare">
+          <div class="tele-item"><span class="tl mono">GPA</span><span class="tv scr" data-text="3.66"></span></div>
+          <div class="tele-item"><span class="tl mono">YEAR</span><span class="tv scr" data-text="AUG 2023 - MAY 2025"></span></div>
+        </div>
+      </div>
+      <div class="story-right" style="--bg-img:url('images/Backgrounds/lab-bg.jpg')">
+        <p class="story-caption">From pixels to policies to propellers.</p>
+        <p>Maryland is where I learned to think like a robot, and then to think better than one. It started with <b>perception</b>: teaching machines to see through cameras, depth, and optical flow. Then <b>planning</b> gave that vision purpose, turning maps into motion with A*, RRT variants, and trajectory optimization. <b>Control theory</b> grounded everything in physics, where LQR and LQG taught me that elegance means stability under noise, not just clean math.</p>
+        <p>From there the story got more human. <b>Robot Learning</b> showed me how machines improve from demonstration and reward. <b>Natural Language Processing</b> let them take instructions in plain English. <b>Decision making in robotics</b> taught coordination when many robots share one world, and <b>Human-Robot Interaction</b> asked the hardest question of all: how autonomy should behave around people. The final chapter took flight with <b>hands-on autonomous aerial robotics</b>, where every lesson above had to survive on real UAV hardware.</p>
+      </div>
+    </div>
+
+    <div class="story-grid">
+      <div class="story-left">
+        <img class="story-logo" src="images/University Logos/Panimalar.png" alt="Panimalar Institute of Technology logo">
+        <h3>Panimalar Institute of Technology</h3>
+        <p class="story-role">B.E. Mechanical Engineering (Anna University) &nbsp;&middot;&nbsp; Chennai, India</p>
+        <div class="tele-bare">
+          <div class="tele-item"><span class="tl mono">GPA</span><span class="tv scr" data-text="8.8"></span></div>
+          <div class="tele-item"><span class="tl mono">YEAR</span><span class="tv scr" data-text="AUG 2018 - JUL 2022"></span></div>
+        </div>
+      </div>
+      <div class="story-right" style="--bg-img:url('images/Backgrounds/lab-bg.jpg')">
+        <p class="story-caption">Mechanical first. Software second.</p>
+        <p>Before I wrote software for robots, I learned what robots are made of. Mechanical engineering gave me the physical intuition every roboticist secretly relies on: <b>kinematics, dynamics, materials</b>, and the discipline of <b>CAD</b>, from AutoCAD to SolidWorks and Fusion 360. Designing and manufacturing a <b>pneumatic vice</b> taught me that tolerances are not suggestions, and investigating <b>electromagnetic shielding with carbon nanotubes</b> taught me how research actually works.</p>
+        <p>That foundation is why I trust my simulations today. When I export a <b>URDF</b> or tune a controller, I am not treating the robot as an abstraction. I know where the mass sits, why the joint flexes, and what the real world will do to a perfect plan. That order made all the difference.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 5. STUFFS, I HAVE BUILT ============ -->
+  <section id="builds" class="projects-section wave-section">
+    <h2 class="scramble-title" data-text="STUFFS, I HAVE BUILT">STUFFS, I HAVE BUILT</h2>
+    <div class="carousel">
+      <button class="car-arrow left" aria-label="Previous project">&#8249;</button>
+      <div class="car-viewport" id="projViewport"></div>
+      <button class="car-arrow right" aria-label="Next project">&#8250;</button>
+    </div>
+    <div class="car-dots" id="projDots"></div>
+  </section>
+
+  <div class="proj-modal" id="projModal" aria-hidden="true">
+    <div class="proj-modal-card">
+      <button class="modal-close mono" id="modalClose">&#10005;</button>
+      <p class="mono" style="position:absolute;top:14px;right:16px;color:#8a919c;font-size:.68rem;letter-spacing:.1em">[TAP ANYWHERE TO CLOSE]</p>
+      <div class="modal-media"><img id="modalGif" src="" alt=""></div>
+      <div class="modal-body">
+        <h3 id="modalTitle"></h3>
+        <p id="modalDesc"></p>
+        <a id="modalLink" class="modal-link" href="#" target="_blank" rel="noopener">View on GitHub &#8594;</a>
+        <div class="modal-tele" id="modalTele"></div>
       </div>
     </div>
   </div>
 
-  <!-- My Experience Section -->
-    <section id="experience" class="education-container fade-in delay-1">
-        <div class="education-left">
-            <h2>MY WORK</h2>
-            <div class="education-timeline">
+  <!-- ============ 6. THE STACK, I WORK WITH.. ============ -->
+  <section id="stacks" class="skills-section wave-section">
+    <h2 class="scramble-title" data-text="THE STACK, I WORK WITH..">THE STACK, I WORK WITH..</h2>
+    <div class="skill-grid" id="skillGrid"></div>
+  </section>
 
-                <!-- Anthropilot -->
-                <div class="education-item">
-                    <img src="images/Company Logos/Anthropilot.png" alt="Anthropilot Inc. logo">
-                    <div class="dot"></div>
-                    <div class="education-details">
-                        <h3>Robotics Software Engineer</h3>
-                        <p>Anthropilot Inc. — Remote</p>
-                        <p>September 2025 - Present</p>
-                        <p>Engineered the integration of a COCO-pretrained RT-DETR-L instance segmentation model into a high-performance Python vision runtime, architecting the end-to-end inference pipeline and rigorously validating perception behavior across a dataset of 900+ images. Developed advanced mask post-processing logic and confidence-gated safe/unsafe classification algorithms, successfully reducing manual intervention by 40%. Instrumented comprehensive run-level telemetry and performance metrics to ensure robust edge deployment readiness and deterministic system execution.</p>
-                    </div>
-                </div>
+  <!-- ============ 7. CERTIFICATES ============ -->
+  <section id="certs" class="certs-section wave-section">
+    <h2 class="scramble-title" data-text="CERTIFICATES">CERTIFICATES</h2>
+    <div class="cert-grid" id="certGrid"></div>
+  </section>
 
-            </div>
-        </div>
-    </section>
-
-  <!-- My Education Section -->
-    <section id="education" class="education-container fade-in delay-1">
-        <div class="education-left">
-            <h2>MY FOUNDATION</h2>
-            <div class="education-timeline">
-                
-                <!-- Master's Degree -->
-                <div class="education-item">
-                    <img src="images/University Logos/University_of_Maryland_seal.svg.png" alt="University of Maryland Logo">
-                    <div class="dot"></div>
-                    <div class="education-details">
-                        <h3>Master of Engineering (M.Eng) in Robotics</h3>
-                        <p>University of Maryland</p>
-                        <p>College Park, Maryland, United States</p>
-                        <p>August 2023 - May 2025</p>
-                    </div>
-                </div>
-
-                <!-- Bachelor's Degree -->
-                <div class="education-item">
-                    <img src="images/University Logos/Panimalar.png" alt="Panimalar Institute of Technology Logo">
-                    <div class="dot"></div>
-                    <div class="education-details">
-                        <h3>Bachelor of Engineering (B.E) in Mechanical Engineering</h3>
-                        <p>Panimalar Institute of Technology (Affiliated to Anna University)</p>
-                        <p>Chennai, Tamil Nadu, India</p>
-                        <p>August 2018 - July 2022</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-  
-<!-- Projects Section -->
-<section id="projects" class="projects-container fade-in delay-2">
-    <h2>STUFFS, I HAVE BUILT</h2>
-    <div class="carousel" id="project-carousel">
-        <button class="car-arrow left" aria-label="Previous project">&#8249;</button>
-        <div class="car-viewport">
-            <div class="car-slide" data-i="0">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/FiredroneX.gif" alt="FireDroneX Project GIF" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>FireDroneX – Autonomous UAV Fire Detection</h3>
-                        <div class="proj-desc"><p>FireDroneX is an autonomous UAV system that detects and localizes fire using computer vision and monocular depth estimation. Built with ROS 2 and PX4, it integrates YOLO for real-time fire detection and uses offboard control with PID-based trajectory planning for smooth, responsive aerial navigation in simulated emergency scenarios. <b>Achieved 1.2 m localization accuracy with sub-100 ms streaming latency on VOXL 2 hardware.</b></p></div>
-                        <a href="https://github.com/varunlakshmanan11/FireDroneX" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="1">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/Turtlebot Challenge.gif" alt="TurtleBot3 perception-based navigation demo" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Perception Based Robot Navigation</h3>
-                        <div class="proj-desc"><p>This project involves developing a perception system for a TurtleBot3 robot to navigate in a dynamic environment. The perception system uses OpenCV to detect and track objects in the environment and provides the robot with the necessary information to navigate safely.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Perception-Based-Robot-Navigation" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="2">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/MCTS.gif" alt="Multi-robot MCTS navigation in Gazebo" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Multi-Robot Navigation in Dynamic Environments Using Centralized and Decentralized Monte Carlo Tree Search</h3>
-                        <div class="proj-desc"><p>Monte Carlo Tree Search (MCTS) for multi-robot navigation in a dynamic environment. The simulation features four TurtleBot3 Waffle robots in a Gazebo world that includes moving obstacles, making the task more challenging.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Multi-Robot-Navigation-Using-Centralized-and-Decentralized-Monte-Carlo-Tree-Search" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="3">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/DRL project.gif" alt="Dueling Double DQN TurtleBot3 navigation" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Performance Analysis of Dueling Double DQN on TurtleBot3 for Navigation in Dynamic Environments</h3>
-                        <div class="proj-desc"><p>This project evaluates and compares the Dueling Double Deep Q-Network (Dueling Double DQN) against Vanilla Deep Q-Network (DQN) for navigation in a dynamic Gazebo simulation. <b>Achieved 75% task completion across 5,000 trials, outperforming standard DQN with fewer collisions</b> environment.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Performance-Analysis-of-Dueling-Double-DQN-on-TurtleBot3-navigating-in-dynamic-environment" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="4">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/NLP Project.gif" alt="NLP text-to-command robot navigation" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Adaptive Text-to-Command Translation for Robot Navigation</h3>
-                        <div class="proj-desc"><p>Autonomous Mobile Robot Navigation by integrating Natural Language Processing (NLP) for command-based navigation in a simulated environment.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Adaptive-Text-to-Command-Translation-for-Robot-Navigation" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="5">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/A STAR.gif" alt="A* path planning TurtleBot3 demo" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>A* Algorithm Implementation for a Rigid Robot</h3>
-                        <div class="proj-desc"><p>Implementation of A* Algorithm for a TurtleBot3 to navigate successfully through the custom made environment in Gazebo.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/A_star-Algorithm-Implementation-for-a-Rigid-Robot" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="6">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/MPAP.gif" alt="Mobile pick-and-place manipulator simulation" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Alpha - Mobile Pick and Place Manipulator</h3>
-                        <div class="proj-desc"><p>This project involves designing a mobile pick-and-place manipulator in SolidWorks and simulating it in Gazebo using Teleop, Open-loop controllers, and Inverse Kinematics.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Mobile-Pick-and-Place-Manipulator" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="7">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/HRI.gif" alt="Gesture-based DexHand and TurtleBot control" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Gesture-Based Control in Assistive Technology</h3>
-                        <div class="proj-desc"><p>Gesture-based control for assistive technology using Google's Mediapipe Library to process hand gestures from a webcam. The recognized gestures are mapped to control DexHand in ROS2 simulation and a TurtleBot for intuitive robotic interactions.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Gesture-Based-Control-in-Assistive-Technology" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="8">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/RRT.gif" alt="RRT variants path planning comparison" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Performance Analysis of Variants RRT Path Planning Algorithm</h3>
-                        <div class="proj-desc"><p>This Project involves comparison of performance of different variants of RRT Path Planning algorithms in 2D and implementing them to a TurtleBot3 in gazebo simulation environment by using a pid controller to check their performance on 3D simulation. <b>Benchmarked across 10k iterations with Q-RRT* performing best overall.</b></p></div>
-                        <a href="https://github.com/varunlakshmanan11/Performance-Analysis-of-RRT-Variants" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-            <div class="car-slide" data-i="9">
-                <div class="proj-media">
-                    <img class="project-gif" src="images/Project Gifs/Panda.gif" alt="Franka Panda MoveIt pick-and-place" loading="lazy">
-                    <div class="proj-overlay">
-                        <h3>Motion Planning of PANDA Robot Using MoveIt</h3>
-                        <div class="proj-desc"><p>This project showcases a ROS 2 simulation of a Panda robot with essential configurations for a complete pick-and-place workflow. It moves from a default position, picks an object, places it in a designated location, and returns to the default pose—all within a MoveIt-based environment. This setup is ideal for anyone looking to explore motion planning, grasping, and advanced manipulation in ROS 2.</p></div>
-                        <a href="https://github.com/varunlakshmanan11/Motion-Planning-of-PANDA-Manipulator-Using-MoveIt" target="_blank" rel="noopener">View on GitHub →</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="car-arrow right" aria-label="Next project">&#8250;</button>
+  <!-- ============ 8. TRANSMISSION CENTER ============ -->
+  <section id="contact" class="contact-section wave-section">
+    <h2 class="scramble-title" data-text="TRANSMISSION CENTER">TRANSMISSION CENTER</h2>
+    <div class="contact-grid reveal-late">
+      <div class="contact-info mono">
+        <p class="proto">[CONTACT PROTOCOL]</p>
+        <p><span class="chan">EMAIL&nbsp;&nbsp;&nbsp;</span><a href="mailto:varunlakshmanan150@gmail.com">varunlakshmanan150@gmail.com</a></p>
+        <p><span class="chan">LINKEDIN</span><a href="https://www.linkedin.com/in/varunlakshmanan11" target="_blank" rel="noopener">in/varunlakshmanan11</a></p>
+        <p><span class="chan">GITHUB&nbsp;&nbsp;</span><a href="https://github.com/varunlakshmanan11" target="_blank" rel="noopener">github.com/varunlakshmanan11</a></p>
+        <p><span class="chan">BASE&nbsp;&nbsp;&nbsp;&nbsp;</span>Washington, USA</p>
+      </div>
+      <form class="hud-form mono" id="contactForm" action="https://formspree.io/f/mqaenyed" method="POST">
+        <p class="proto">[INITIATE TRANSMISSION]</p>
+        <div class="field"><input id="f-name" type="text" name="name" placeholder=" " required><label for="f-name">NAME</label></div>
+        <div class="field"><input id="f-email" type="email" name="email" placeholder=" " required><label for="f-email">EMAIL</label></div>
+        <div class="field"><textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea><label for="f-msg">MESSAGE</label></div>
+        <button type="submit">SEND SIGNAL &#8594;</button>
+        <p id="formMessage" role="status"></p>
+      </form>
     </div>
-    <div class="car-dots"></div>
-</section>
+  </section>
 
-<!-- Skills Section -->
-    <section id="skills" class="skills-container fade-in delay-3">
-        <h2>THE STACK, I WORK WITH..</h2>
-        <div class="carousel skills-carousel">
-            <button class="car-arrow left" aria-label="Previous skill category">&#8249;</button>
-            <div class="car-viewport skills-viewport">
-            <div class="car-slide" data-i="0">
-                <div class="skill-slide">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li><a href="https://www.python.org/" target="_blank"><img src="images/Skills Logo/Python-Emblem.png" alt="Python"> Python</a></li>
-                        <li><a href="https://isocpp.org/" target="_blank"><img src="images/Skills Logo/cpp_logo.png" alt="C++"> C++</a></li>
-                        <li><a href="https://www.mathworks.com/products/matlab.html" target="_blank"><img src="images/Skills Logo/Matlab_Logo.png" alt="MATLAB"> MATLAB</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="1">
-                <div class="skill-slide">
-                    <h3>CAD Software</h3>
-                    <ul>
-                        <li><a href="https://www.autodesk.com/products/autocad/overview" target="_blank"><img src="images/Skills Logo/Autocad.webp" alt="AutoCAD"> AutoCAD</a></li>
-                        <li><a href="https://www.autodesk.com/products/fusion-360/overview" target="_blank"><img src="images/Skills Logo/AutoDesk Fusion 360.png" alt="Fusion 360"> Fusion 360</a></li>
-                        <li><a href="https://www.ptc.com/en/products/creo" target="_blank"><img src="images/Skills Logo/Creo.png" alt="Creo"> Creo Parametric</a></li>
-                        <li><a href="https://www.solidworks.com/" target="_blank"><img src="images/Skills Logo/Solidworks.webp" alt="SolidWorks"> SolidWorks</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="2">
-                <div class="skill-slide">
-                    <h3>Tools & Libraries</h3>
-                    <ul>
-                        <li><a href="https://opencv.org/" target="_blank"><img src="images/Skills Logo/OpenCV_logo_black.png" alt="OpenCV"> OpenCV</a></li>
-                        <li><a href="https://numpy.org/" target="_blank"><img src="images/Skills Logo/Numpy.png" alt="NumPy"> NumPy</a></li>
-                        <li><a href="https://pandas.pydata.org/" target="_blank"><img src="images/Skills Logo/Pandas.png" alt="Pandas"> Pandas</a></li>
-                        <li><a href="https://scipy.org/" target="_blank"><img src="images/Skills Logo/scipy.png" alt="SciPy"> SciPy</a></li>
-                        <li><a href="https://developers.google.com/mediapipe" target="_blank"><img src="images/Skills Logo/Mediapipe.png" alt="MediaPipe"> MediaPipe</a></li>
-                        <li><a href="https://www.nltk.org/" target="_blank"><img src="images/Skills Logo/NLTK.png" alt="NLTK"> NLTK</a></li>
-                        <li><a href="https://git-scm.com/" target="_blank"><img src="images/Skills Logo/Git.png" alt="Git"> Git</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="3">
-                <div class="skill-slide">
-                    <h3>Robotics Frameworks</h3>
-                    <ul>
-                        <li><a href="https://www.ros.org/" target="_blank"><img src="images/Skills Logo/ROS.png" alt="ROS 2"> ROS 2</a></li>
-                        <li><a href="https://moveit.ros.org/" target="_blank"><img src="images/Skills Logo/MoveIt.png" alt="MoveIt"> MoveIt</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="4">
-                <div class="skill-slide">
-                    <h3>Simulation Software</h3>
-                    <ul>
-                        <li><a href="https://gazebosim.org/" target="_blank"><img src="images/Skills Logo/gazebo-logo-51C46471CA-seeklogo.com.png" alt="Gazebo"> Gazebo</a></li>
-                        <li><a href="https://developer.nvidia.com/isaac/sim" target="_blank"><img src="images/Skills Logo/Isaac.png" alt="Nvidia Isaac Sim"> Isaac Sim</a></li>
-                        <li><a href="https://isaac-sim.github.io/IsaacLab/" target="_blank"><img src="images/Skills Logo/Isaac.png" alt="Nvidia Isaac Lab"> Isaac Lab</a></li>
-                        <li><a href="https://mujoco.org/" target="_blank"><img src="images/Skills Logo/Mujoco.jpeg" alt="MuJoCo">Mujoco</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="5">
-                <div class="skill-slide">
-                    <h3>Machine Learning Frameworks</h3>
-                    <ul>
-                        <li><a href="https://pytorch.org/" target="_blank"><img src="images/Skills Logo/Pytorch.png" alt="PyTorch"> PyTorch</a></li>
-                        <li><a href="https://www.tensorflow.org/" target="_blank"><img src="images/Skills Logo/Tensorflow.png" alt="TensorFlow"> TensorFlow</a></li>
-                        <li><a href="https://scikit-learn.org/" target="_blank"><img src="images/Skills Logo/Scikit Learn.png" alt="Scikit-learn"> Scikit-learn</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="car-slide" data-i="6">
-                <div class="skill-slide">
-                    <h3>GPU Computing & Deployment</h3>
-                    <ul>
-                        <li><a href="https://developer.nvidia.com/cuda-toolkit" target="_blank"><img src="images/Skills Logo/CUDA.png" alt="CUDA C/C++"> CUDA C/C++</a></li>
-                        <li><a href="https://www.docker.com/" target="_blank"><img src="images/Skills Logo/Docker.png" alt="Docker"> Docker</a></li>
-                        <li><a href="https://www.kernel.org/" target="_blank"><img src="images/Skills Logo/Linux.png" alt="Linux"> Linux</a></li>
-                    </ul>
-                </div>
-            </div>
-            </div>
-            <button class="car-arrow right" aria-label="Next skill category">&#8250;</button>
-        </div>
-        <div class="car-dots"></div>
-    </section>
+  <footer class="mono">&copy; 2026 VARUN LAKSHMANAN &middot; ALL SYSTEMS NOMINAL</footer>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-container fade-in delay-1">
-        <h2>Let's Connect</h2>
-
-        <div class="contact-grid">
-
-            <!-- Contact Info -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <img src="images/Contact Logos/Mail.jpg" alt="Email">
-                    <a href="mailto:varunlakshmanan150@gmail.com">varunlakshmanan150@gmail.com</a>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/Contact Logos/Linkedin.png" alt="LinkedIn">
-                    <a href="https://www.linkedin.com/in/varunlakshmanan11" target="_blank">www.linkedin.com/in/varunlakshmanan11</a>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/Contact Logos/Github.png" alt="GitHub">
-                    <a href="https://github.com/varunlakshmanan11" target="_blank">https://github.com/varunlakshmanan11</a>
-                </div>
-
-                <div class="contact-item">
-                    <img src="images/Contact Logos/Location.png" alt="Location">
-                    <p>Redmond, Washington, USA</p>
-                </div>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h3>Send Me a Message</h3>
-                <form id="contactForm" action="https://formspree.io/f/mqaenyed" method="post" enctype="text/plain">
-                    <div class="field"><input id="f-name" type="text" name="name" placeholder=" " required><label for="f-name">Your Name</label></div>
-                    <div class="field"><input id="f-email" type="email" name="email" placeholder=" " required><label for="f-email">Your Email</label></div>
-                    <div class="field"><textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea><label for="f-msg">Your Message</label></div>
-                    <button type="submit">Send Message</button>
-                </form>
-
-                <p id="formMessage"></p>
-            </div>
-
-        </div>
-    </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>© 2025 Varun Lakshmanan. All Rights Reserved.</p>
-  </footer>
-  
-
-  <!-- Link to External JS -->
-  <script src="js/script.js?v=4.2"></script>
+  <script src="js/script.js?v=5.6"></script>
 </body>
 </html>
