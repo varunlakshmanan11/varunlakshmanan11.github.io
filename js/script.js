@@ -174,9 +174,9 @@ document.addEventListener("DOMContentLoaded", function () {
         introName.style.transform = `translate(${dx}px, ${dy}px) scale(${scale})`;
         introName.style.textShadow = "none";
       }
-    }, 950);
+    }, 600);
     // step 3: swap in the real title, fade overlay, reveal photo
-    setTimeout(() => finishIntro(false), 1450);
+    setTimeout(() => finishIntro(false), 950);
   }
 
   /* ---------- hero photo: tap support for touch devices ---------- */
@@ -265,4 +265,18 @@ document.addEventListener("DOMContentLoaded", function () {
       fm.classList.toggle("success", /sent|thank/i.test(fm.textContent));
     }).observe(fm, { childList: true, characterData: true, subtree: true });
   }
+});
+
+/* ---------- v4.1: close About overlay on any nav interaction ---------- */
+document.addEventListener("DOMContentLoaded", function () {
+  const closeAbout = () => {
+    document.querySelectorAll(".hero-stage.tapped").forEach((s) => s.classList.remove("tapped"));
+  };
+  document.querySelectorAll(".nav-links a, .mobile-nav a, .nav-title, .mobile-title").forEach((el) =>
+    el.addEventListener("click", closeAbout)
+  );
+  const mi = document.getElementById("menu-icon");
+  if (mi) mi.addEventListener("click", closeAbout);
+  // safety net: closing also on scroll away from hero
+  window.addEventListener("hashchange", closeAbout);
 });
