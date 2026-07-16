@@ -4,7 +4,7 @@
    ============================================================ */
 :root{
   --bg:#000000; --bg2:#0B0D12; --line:#2A3040;
-  --red:#E63946; --cyan:#4FD9F0; --white:#F2F4F8; --grey:#B9C0CA; --muted:#8a919c;
+  --red:#E63946; --cyan:#4FD9F0; --white:#F2F4F8; --grey:#101111; --muted:#000000;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:84px;background:#000}
