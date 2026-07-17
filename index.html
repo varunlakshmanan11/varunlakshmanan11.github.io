@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://varun-robotics.com/">
   <meta property="og:image" content="https://varun-robotics.com/images/Profile Photo/Pro.png">
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=5.6" />
+  <link rel="stylesheet" href="css/styles.css?v=5.8" />
 </head>
 <body>
 
@@ -27,12 +27,12 @@
     <div class="nav-title" id="nav-title">Varun Lakshmanan</div>
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
-      <li><a href="#simulation">Simulation</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#foundation">Foundation</a></li>
       <li><a href="#builds">Builds</a></li>
       <li><a href="#stacks">Stacks</a></li>
       <li><a href="#certs">Certs</a></li>
+      <li><a href="#simulation">Simulation</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <div class="menu-icon" id="menu-icon">&#9776;</div>
@@ -41,12 +41,12 @@
     <div class="mobile-title">Varun Lakshmanan</div>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#simulation">Simulation</a></li>
       <li><a href="#work">Work</a></li>
       <li><a href="#foundation">Foundation</a></li>
       <li><a href="#builds">Builds</a></li>
       <li><a href="#stacks">Stacks</a></li>
       <li><a href="#certs">Certs</a></li>
+      <li><a href="#simulation">Simulation</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
@@ -64,7 +64,6 @@
             <p>The robotics landscape evolves rapidly, and my response is a quiet, continuous pursuit of knowledge. From mastering hardware acceleration in modern CUDA C++ to advanced Deep Learning architectures, I treat my own skill set like a neural network: constantly training, iterating, and upgrading.</p>
             <p>Let&rsquo;s connect and engineer systems that are intelligent, deterministic, and mechanically sound!</p>
           </div>
-          <a href="Resume/Resume_Varun.pdf" target="_blank" class="cv-button">&#128196; Download My CV</a>
         </div>
       </div>
     </div>
@@ -72,23 +71,8 @@
       <h1 class="hero-tag">ROBOTICS SOFTWARE ENGINEER</h1>
       <p class="hero-sub">Perception &amp; Autonomy&nbsp;&nbsp;|&nbsp;&nbsp;Simulation</p>
       <p class="hero-quote">"I perfect the logic in simulation before unleashing it into the chaos of the real world."</p>
+      <a href="Resume/Resume_Varun.pdf" target="_blank" class="cv-button">&#128196; Download My CV</a>
       <p class="hover-hint">Hover the photo to read about me</p>
-    </div>
-  </section>
-
-  <!-- ============ 2. TRY THE SIMULATION ============ -->
-  <section id="simulation" class="sim-section">
-    <h2 class="scramble-title" data-text="TRY THE SIMULATION">TRY THE SIMULATION</h2>
-    <p class="sim-hint">Click any free cell. The robot plans a collision free path with A* and drives it. Red zones are obstacles.</p>
-    <div class="sim-wrap">
-      <canvas id="botCanvas" width="600" height="600"></canvas>
-      <div class="sim-readout mono" id="simReadout">
-        <span>PATH: <b id="p1">0</b></span>
-        <span>NODES EXPANDED: <b id="p2">0</b></span>
-        <span>TARGETS: <b id="simScore">0</b></span>
-        <span id="simStatus">STATUS: IDLE</span>
-      </div>
-      <button class="sim-reset mono" id="simReset">RESET MAP</button>
     </div>
   </section>
 
@@ -189,30 +173,44 @@
     <div class="cert-grid" id="certGrid"></div>
   </section>
 
+  <!-- ============ 2. TRY THE SIMULATION ============ -->
+  <section id="simulation" class="sim-section">
+    <h2 class="scramble-title" data-text="TRY THE SIMULATION">TRY THE SIMULATION</h2>
+    <p class="sim-hint">Click any free cell. The robot plans a collision free path with A* and drives it. Red zones are obstacles.</p>
+    <div class="sim-wrap">
+      <canvas id="botCanvas" width="600" height="600"></canvas>
+      <div class="sim-readout mono" id="simReadout">
+        <span>PATH: <b id="p1">0</b></span>
+        <span>NODES EXPANDED: <b id="p2">0</b></span>
+        <span>TARGETS: <b id="simScore">0</b></span>
+        <span id="simStatus">STATUS: IDLE</span>
+      </div>
+      <button class="sim-reset mono" id="simReset">RESET MAP</button>
+    </div>
+  </section>
+
   <!-- ============ 8. TRANSMISSION CENTER ============ -->
   <section id="contact" class="contact-section wave-section">
-    <h2 class="scramble-title" data-text="TRANSMISSION CENTER">TRANSMISSION CENTER</h2>
+    <h2 class="scramble-title" data-text="GET IN TOUCH">GET IN TOUCH</h2>
     <div class="contact-grid reveal-late">
       <div class="contact-info mono">
-        <p class="proto">[CONTACT PROTOCOL]</p>
         <p><span class="chan">EMAIL&nbsp;&nbsp;&nbsp;</span><a href="mailto:varunlakshmanan150@gmail.com">varunlakshmanan150@gmail.com</a></p>
         <p><span class="chan">LINKEDIN</span><a href="https://www.linkedin.com/in/varunlakshmanan11" target="_blank" rel="noopener">in/varunlakshmanan11</a></p>
         <p><span class="chan">GITHUB&nbsp;&nbsp;</span><a href="https://github.com/varunlakshmanan11" target="_blank" rel="noopener">github.com/varunlakshmanan11</a></p>
         <p><span class="chan">BASE&nbsp;&nbsp;&nbsp;&nbsp;</span>REDMOND, WA, USA</p>
       </div>
       <form class="hud-form mono" id="contactForm" action="https://formspree.io/f/mqaenyed" method="POST">
-        <p class="proto">[INITIATE TRANSMISSION]</p>
         <div class="field"><input id="f-name" type="text" name="name" placeholder=" " required><label for="f-name">NAME</label></div>
         <div class="field"><input id="f-email" type="email" name="email" placeholder=" " required><label for="f-email">EMAIL</label></div>
         <div class="field"><textarea id="f-msg" name="message" rows="5" placeholder=" " required></textarea><label for="f-msg">MESSAGE</label></div>
-        <button type="submit">SEND SIGNAL &#8594;</button>
+        <button type="submit">SEND MESSAGE &#8594;</button>
         <p id="formMessage" role="status"></p>
       </form>
     </div>
   </section>
 
-  <footer class="mono">&copy; 2026 VARUN LAKSHMANAN &middot; ALL SYSTEMS NOMINAL</footer>
+  <footer class="mono">&copy; 2026 VARUN LAKSHMANAN &middot; ALL RIGHTS RESERVED</footer>
 
-  <script src="js/script.js?v=5.6"></script>
+  <script src="js/script.js?v=5.8"></script>
 </body>
 </html>

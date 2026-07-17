@@ -176,7 +176,6 @@ document.addEventListener("DOMContentLoaded", () => {
   PROJECTS.forEach((p,i)=>{
     const s=document.createElement("div");s.className="car-slide";s.dataset.i=i;
     s.innerHTML=`<div class="proj-card"><img src="${p.g}" alt="${p.t}" loading="lazy">
-      <span class="metric-badge mono">${p.b}</span>
       <div class="proj-name">${p.t}</div></div>`;
     pv.appendChild(s);
   });
@@ -257,12 +256,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const form=document.getElementById("contactForm"), fm=document.getElementById("formMessage");
   form.addEventListener("submit",async e=>{
     e.preventDefault();
-    fm.textContent="TRANSMITTING...";fm.classList.remove("success");
+    fm.textContent="SENDING...";fm.classList.remove("success");
     try{
       const res=await fetch(form.action,{method:"POST",body:new FormData(form),headers:{Accept:"application/json"}});
-      if(res.ok){fm.textContent="TRANSMISSION RECEIVED";fm.classList.add("success");form.reset();}
-      else{fm.textContent="SIGNAL LOST. TRY AGAIN OR EMAIL DIRECTLY.";}
-    }catch{fm.textContent="SIGNAL LOST. TRY AGAIN OR EMAIL DIRECTLY.";}
+      if(res.ok){fm.textContent="MESSAGE SENT. I WILL GET BACK TO YOU SOON.";fm.classList.add("success");form.reset();}
+      else{fm.textContent="SOMETHING WENT WRONG. TRY AGAIN OR EMAIL ME DIRECTLY.";}
+    }catch{fm.textContent="SOMETHING WENT WRONG. TRY AGAIN OR EMAIL ME DIRECTLY.";}
   });
 
   /* ---------- A* PATH PLANNING GAME ---------- */
