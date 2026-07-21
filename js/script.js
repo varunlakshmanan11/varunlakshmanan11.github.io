@@ -9,6 +9,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* ---------- data ---------- */
   const PROJECTS = [
+    {t:"Quadruped Locomotion Policy Deployment (TensorRT + ROS 2)", g:"images/Project Gifs/TRT Locomotion.gif",
+     d:"A reinforcement learning locomotion policy for ANYmal-C, trained in NVIDIA Isaac Lab and deployed the way most projects skip. The policy exports to ONNX, compiles to a TensorRT engine, and runs inside a C++ ROS 2 node that closes the control loop against Isaac Sim at 50 Hz, walking uneven terrain with a 187 ray height scanner and following waypoints from a second planning node. Instrumenting the loop revealed the policy was acting on state that was already 10 ms stale, and moving inference into the state callback cut end to end latency 9x with no change to inference time.",
+     l:"https://github.com/varunlakshmanan11/quad-locomotion-deployment", b:"1.3 ms E2E",
+     m:[["END-TO-END","1.3 ms"],["REDUCTION","9x"]]},
     {t:"FireDroneX: Autonomous UAV Fire Detection", g:"images/Project Gifs/FiredroneX.gif",
      d:"FireDroneX is an autonomous UAV system that detects and localizes fire using computer vision and monocular depth estimation. Built with ROS 2 and PX4, it integrates YOLO for real-time fire detection and uses offboard control with PID based trajectory planning for smooth, responsive aerial navigation in simulated emergency scenarios.",
      l:"https://github.com/varunlakshmanan11/FireDroneX", b:"1.2 m ACC",
